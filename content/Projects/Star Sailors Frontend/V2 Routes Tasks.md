@@ -32,13 +32,14 @@
 * Or could your "home page" just be an interactable home base with a menu? So essentially take `/planets/{[your]id}` and move that to index route?
 
 # Collecting resources
-* Same structure as with the old crypto game from 2022 -> just send a rover there and have it eat up supplies? Create a function that will determine how long the rover has been "mining", then click "end", microservice calculates rewards
-* I was thinking that we could possibly have a very stripped back control panel for mobile, maybe even only one function, but then I remembered that it will be a mobile-first (or in theory, anyway, at minimum it will need feature parity between desktop and mobile) deliverable and thus we can't lock features out of the mobile inference.
-	* Put everything into a bento grid.
-	* We could have a side-scrolling section that shows all the information/context
-	* Control panel/control(ler)s, camera, and then data/information
+* "Old crypto interface" -> we've now decided to implement a collection system based on time since/of deployment. This will suffice for V2.0 until we can implement a more robust game language
+* I've got some new ideas for a responsive control panel that I've shared on `SGV2-7` ticket. The key thing here is that we keep some traditional vehicle controls.
+	* **Put everything into a bento grid.**
+	* **We could have a side-scrolling section that shows all the information/context**
+	* **Control panel/control(ler)s, camera, and then data/information**
 
 * Error: using the `AddResourceToInventory` button on `planets/sector/{$id}` does NOT add a sector value. I am assuming this is a bug as we do have a discriminator in the component definition, and not that this is intended to be the case (e.g. structures will be confined to a sector/planet, while items may not be by default? But should they at least show where they originate from)
+	* This is relevant if we don't create these components again from scratch (for clarity, I am advocating for taking as much as possible from `initialClassification` branch/`SGV2-10-...` before the new project defined in `SGV2-24`)
 
 ![[Pasted image 20240419172514.png]]
 
@@ -50,7 +51,13 @@
 * I just realised that the telescope selector doesn't require the telescope to exist on the planet (afaik at the moment)
 	* We have done this successfully for the sectors/{$id} route, though, which is good.
 
+Going forward, while in this current testing sprint, all entries into `inventoryUSERS` will go into `planetId = 2`, `sectorId = 18` if being created for my user profile.
+
 ### Rovers/Automatons
 Each of these will be introduced in the `inventoryITEMS` table, and they will have a parent item of id: `22`, as this is the "Vehicle launch structure". Not all of these will be vehicles, however for now we are working on rovers so this is the best way to do it for now.
+
+* SGV2-20: Rovers will start on a planet, and then migrate to a sector. As sectors are no longer "explorable" via the frontend
+
+* SGV2-20: I will set rovers to be craftable using 1 piece of iron, this will be a placeholder crafting recipe (see [[Crafting]]) and will not use the crafting microservice/API route during this phase of development. Items will be collected just by the rover, there won’t be any special modifications/'rover arms' etc. for now.
 # Hosting
 * We'll host all the flask API(s) on a few raspberry Pis, thanks to Rhys
