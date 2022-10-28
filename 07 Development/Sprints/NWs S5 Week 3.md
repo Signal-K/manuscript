@@ -6,6 +6,7 @@ tags:
   - Sprint-Planning
 sticker: lucide//circle-equal
 connie-publish: true
+connie-page-id: "33292289"
 ---
 Nights & Weekends (by `_buildspace`) Season 5, Week 3 sprint
 
@@ -27,6 +28,7 @@ See [[Finished tutorials & unlimited data]] for more information
 The big 6:
 1. Improve classification process
 	1. [[#^040856]]
+	2. Add classification feed -> via action button
 2. Add the pokedex module
 	1. Add content to a local database
 	2. AI can help with other classifications too
@@ -37,14 +39,22 @@ The big 6:
 4. Reduce load on server with electric
 	1. Don't necessarily need to get it all working, priority is features and UI. 
 	2. The priority matrix for these backend tickets relates a lot to the number of users and the subsequent load on the server
-5. More data -> fun sandbox mechanics
+5. More data -> fun sandbox ~~mechanics~~
+	1. (Starting to plan out with [[PostCards (CPW-2)]])
 6. Give users more to do after the tutorial - implement an open-ended mechanic/loop
 	1. Also explain certain mechanics/improve context better for [[#^43038b]], e.g. mining information
 	2. Maybe it would be a good time to implement the post card (`FCDB-2`?) ticket/feature request again...
 
+Some other things (if we have time):
 ### To-Do
-1. Cross-reference this planning document with the new Jira epics
+1. Cross-reference this planning document with the new Jira epics - in progress
+2. Update layout to show off-world operations
+3. Implement non-terrestrial features & layout (i.e. there's no surface to land on, so how do we display structures and how is the gameplay affected?)
+4. Go back to the old v1 builds and look at the features/extra contex/nt we had for planets
+5. [SGV2-64]: [Check what was removed](https://signalk.atlassian.net/browse/SGV2-64?focusedCommentId=10518) 
 
+# Current bugs
+1. Can't upload media to classification form
 # Open tickets
 ## Star Sailors Visuals
 **Clean minerals mechanic**
@@ -59,6 +69,27 @@ The big 6:
 2. [[#^e92a3f]] -> I have confirmed that the `<CraftStructure />` component does not deduct the original materials after crafting a structure, however obviously the new item is created and deployed/arranged successfully
 3. For the deduction to occur, we have to use `<CreateStructureWithItemRequirementinfo craftingItemId={24} />` . However, this component does not show the required/remaining materials for crafting to occur.
 4. That component does also reduce the materials by `x`, not the entire row; so this is a good sign
+
+A note for crafting items & getting resources from automatons:
+```tsx
+const getAvailableItems = () => {
+
+if (missionCompletionStatus.has(21)) {
+
+return items;
+
+} else if (missionCompletionStatus.has(8)) {
+
+return items.filter(item => [11, 13, 15, 16].includes(item.id));
+
+} else {
+
+return items.filter(item => item.id === 11);
+
+}
+
+};
+```
 
 ### Structure interactions
 **Spaceship structure**

@@ -4,6 +4,7 @@ sticker: lucide//align-horizontal-space-between
 tags:
   - Sprints
   - Communications
+connie-page-id: "33292308"
 ---
 **Introduction**
 Hey. Welcome. Bonjour. My name's Liam, and we've just published the first pre-release version of #Star-Sailors Version 2. So I'm going to be talking a little bit about that here.
