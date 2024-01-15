@@ -1,0 +1,172 @@
+{
+  "main": {
+    "id": "5555b6323665bd58",
+    "type": "split",
+    "children": [
+      {
+        "id": "e5be14cf637daa8b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6f20c036690036e0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Star Sailors Frontend/SSF-1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d4a160d88fe92186",
+    "type": "split",
+    "children": [
+      {
+        "id": "5638c44bfe408c3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0c120c0c7b8cd81",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "54badcf24ec33302",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "241bd9efb7ad4514",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "2dc845264cd8cf17",
+    "type": "split",
+    "children": [
+      {
+        "id": "21e28246430d043c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc5ca3c2f62ea85f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Projects/Star Sailors Frontend/SSF-1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6180d0ff02be0d2a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Projects/Star Sailors Frontend/SSF-1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1e18d0c3205132d9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c8d7e2a40ad87a78",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Projects/Star Sailors Frontend/SSF-1.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "6f20c036690036e0",
+  "lastOpenFiles": [
+    "Star Sailors/Narrative/Crafting.md",
+    "Untitled",
+    "Star Sailors/Setup.md",
+    "Star Sailors/Narrative",
+    "Projects/Notes/Quick Plans.md",
+    "Star Sailors/API",
+    "Star Sailors/Pages",
+    "Star Sailors/Components/Tables/ContentRoverImages.md",
+    "Star Sailors/Components/Tables",
+    "Star Sailors/Components/Section",
+    "Star Sailors/Components/RoverData",
+    "Star Sailors/Components/Public",
+    "Star Sailors/Components/Planets",
+    "Star Sailors/Components/Inventory",
+    "Star Sailors/Components/Forms/CreatePostForm.md",
+    "Star Sailors/Components/Classify/PostCard.md",
+    "Star Sailors/Components/Classify/DiscussCard.md",
+    "Star Sailors/Components/Classify/ClassifyFeed.md",
+    "Star Sailors/Classify/ClassifyFeed.md",
+    "Untitled.canvas"
+  ]
+}
