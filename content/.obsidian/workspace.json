@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Star Sailors Frontend/SSF-1.md",
+                "file": "Star Sailors/Pages/Gather.tsx.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Star Sailors Frontend/SSF-1.md",
+                "file": "Star Sailors/Pages/Gather.tsx.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Star Sailors Frontend/SSF-1.md",
+                "file": "Star Sailors/Pages/Gather.tsx.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Star Sailors Frontend/SSF-1.md"
+                "file": "Star Sailors/Pages/Gather.tsx.md"
               }
             }
           }
@@ -148,20 +148,28 @@
   },
   "active": "6f20c036690036e0",
   "lastOpenFiles": [
+    "Projects/Star Sailors Frontend/SSF-1.md",
+    "Star Sailors/Pages/Gather.tsx.md",
+    "Star Sailors/Pages/Planets/Sector/id.md",
+    "Star Sailors/Pages/Planets/Sectors/id.md",
+    "Star Sailors/Pages/Planets/Sector",
+    "Projects/Star Sailors Bugs/SSB-1.md",
+    "Star Sailors/Pages/Planets/Sectors",
+    "Star Sailors/Pages/Planets",
     "Star Sailors/Narrative/Crafting.md",
+    "Projects/Star Sailors Bugs",
+    "Planning/StructureNarrative.md",
+    "Planning/ComponentList.md",
+    "Projects/Notes/Quick Plans.md",
+    "Projects/Notes/Protocols.md",
     "Untitled",
     "Star Sailors/Setup.md",
     "Star Sailors/Narrative",
-    "Projects/Notes/Quick Plans.md",
     "Star Sailors/API",
     "Star Sailors/Pages",
     "Star Sailors/Components/Tables/ContentRoverImages.md",
     "Star Sailors/Components/Tables",
     "Star Sailors/Components/Section",
-    "Star Sailors/Components/RoverData",
-    "Star Sailors/Components/Public",
-    "Star Sailors/Components/Planets",
-    "Star Sailors/Components/Inventory",
     "Star Sailors/Components/Forms/CreatePostForm.md",
     "Star Sailors/Components/Classify/PostCard.md",
     "Star Sailors/Components/Classify/DiscussCard.md",

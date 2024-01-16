@@ -23,6 +23,20 @@ Some notes ->
 3. Fuel will be explored more in subsequent versions
 
 ## Structures
+### Exploration
+Structures/items relating to gathering more data
+1. Telescope Signal Receiver -> #12
+		This tool is used to receive transmissions from your transiting telescope and decode them into readable data
+2. Transiting Telescope -> #14
+		The first telescope you build - can do short-range transiting scans of your base planet
+		Parent item -> #8
+### Automation
+
+### Processing / Refining
+
+### Construction
+
+### Vehicles
 
 ## Archive
 1. Potion -> #1
@@ -42,8 +56,9 @@ These will all be updated & modified as we add more materials to `inventoryITEMS
 
 I think we're also going to need to update the method for how sectors are created and viewed. Especially the UI.
 
+As of v2 for the crafting microservice, we will have multiple items share the same crafting recipe, this is for simplicity when creating sectors so we don't have to create dozens of sectors.
 ## V1 recipe(s)
-
+I believe there was a function that would allow the user to craft a telescope item with either a single piece of coal or iron.
 
 ## V2 recipes
 
