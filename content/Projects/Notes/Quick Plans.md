@@ -19,3 +19,5 @@ Supabase microframeworks + deepnote
 Jira export into Quartz
 
 Tags -> for projects, also tag git issues/commits (maybe use Github discussions/issues like utteranc.es. The key here is creating a workflow that is simple to follow. Maybe custom account management would be the way to go, don't want to lock into using Github)
+
+Create issues from project pages, tag those? -> question then is how do we set up a migration/export if we want to move to a self-hosted solution or another git client like gitlab?

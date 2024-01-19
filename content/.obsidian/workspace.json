@@ -13,13 +13,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Star Sailors/Pages/Gather.tsx.md",
+                "file": "Projects/Star Sailors Frontend/SSF-1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6090b12b72db5d75",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Star Sailors/Narrative/Crafting.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "70991b8c6045dd36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Star Sailors Anomalies/GP-10.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Star Sailors/Pages/Gather.tsx.md",
+                "file": "Projects/Star Sailors Anomalies/GP-10.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Star Sailors/Pages/Gather.tsx.md",
+                "file": "Projects/Star Sailors Anomalies/GP-10.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Star Sailors/Pages/Gather.tsx.md"
+                "file": "Projects/Star Sailors Anomalies/GP-10.md"
               }
             }
           }
@@ -146,9 +171,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6f20c036690036e0",
+  "active": "70991b8c6045dd36",
   "lastOpenFiles": [
+    "Daily tasks.md",
+    "Projects/Star Sailors Anomalies/GP-10.md",
+    "Projects/Star Sailors Anomalies",
     "Projects/Star Sailors Frontend/SSF-1.md",
+    "Star Sailors/Narrative/Crafting.md",
+    "Projects/Notes/Quick Plans.md",
+    "Star Sailors/Setup.md",
+    "Star Sailors/Narrative/Order of Operations.md",
+    "Star Sailors/Components/Content/Create Planet Sector.md",
+    "Star Sailors/Components/Content",
     "Star Sailors/Pages/Gather.tsx.md",
     "Star Sailors/Pages/Planets/Sector/id.md",
     "Star Sailors/Pages/Planets/Sectors/id.md",
@@ -156,20 +190,15 @@
     "Projects/Star Sailors Bugs/SSB-1.md",
     "Star Sailors/Pages/Planets/Sectors",
     "Star Sailors/Pages/Planets",
-    "Star Sailors/Narrative/Crafting.md",
     "Projects/Star Sailors Bugs",
     "Planning/StructureNarrative.md",
     "Planning/ComponentList.md",
-    "Projects/Notes/Quick Plans.md",
     "Projects/Notes/Protocols.md",
     "Untitled",
-    "Star Sailors/Setup.md",
     "Star Sailors/Narrative",
     "Star Sailors/API",
     "Star Sailors/Pages",
     "Star Sailors/Components/Tables/ContentRoverImages.md",
-    "Star Sailors/Components/Tables",
-    "Star Sailors/Components/Section",
     "Star Sailors/Components/Forms/CreatePostForm.md",
     "Star Sailors/Components/Classify/PostCard.md",
     "Star Sailors/Components/Classify/DiscussCard.md",

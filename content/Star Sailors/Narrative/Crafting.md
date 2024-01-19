@@ -16,11 +16,13 @@ tags:
 * Copper
 * Chromium
 * Nickel
+* Water
 
 Some notes ->
 1. Silicates should either be composed of, or smelt into, silicon
 2. Alloy currently consists of a combination of multiple trace metals for simplicity
 3. Fuel will be explored more in subsequent versions
+	1. As an example, you can't just mine fuel from a sector IRL, you'd need to mine raw materials, as well as collect them from the atmosphere, refine them, etc
 
 ## Structures
 ### Exploration
