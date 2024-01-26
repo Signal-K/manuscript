@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Star Sailors/Narrative/Crafting.md",
+                "file": "Projects/Star Sailors Frontend/SSF-2.md",
                 "mode": "source",
                 "source": false
               }
@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "21771bb0f503f37e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Star Sailors Microservices/FLASK-1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Star Sailors Anomalies/GP-10.md",
+                "file": "Projects/Star Sailors Microservices/FLASK-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Star Sailors Anomalies/GP-10.md",
+                "file": "Projects/Star Sailors Microservices/FLASK-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Star Sailors Anomalies/GP-10.md"
+                "file": "Projects/Star Sailors Microservices/FLASK-1.md"
               }
             }
           }
@@ -171,13 +183,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "70991b8c6045dd36",
+  "active": "21771bb0f503f37e",
   "lastOpenFiles": [
+    "Planning/Ideas.md",
+    "Projects/Star Sailors Microservices/FLASK-1.md",
     "Daily tasks.md",
+    "Projects/Star Sailors Microservices",
+    "Projects/Star Sailors Frontend/SSF-2.md",
+    "Star Sailors/Narrative/Crafting.md",
+    "Projects/Keepup Frontend/KU-4.md",
+    "Pasted image 20240217145104.png",
+    "Pasted image 20240217145033.png",
+    "Pasted image 20240217145025.png",
+    "Pasted image 20240217145014.png",
     "Projects/Star Sailors Anomalies/GP-10.md",
+    "Projects/Keepup Frontend",
     "Projects/Star Sailors Anomalies",
     "Projects/Star Sailors Frontend/SSF-1.md",
-    "Star Sailors/Narrative/Crafting.md",
     "Projects/Notes/Quick Plans.md",
     "Star Sailors/Setup.md",
     "Star Sailors/Narrative/Order of Operations.md",
@@ -196,8 +218,6 @@
     "Projects/Notes/Protocols.md",
     "Untitled",
     "Star Sailors/Narrative",
-    "Star Sailors/API",
-    "Star Sailors/Pages",
     "Star Sailors/Components/Tables/ContentRoverImages.md",
     "Star Sailors/Components/Forms/CreatePostForm.md",
     "Star Sailors/Components/Classify/PostCard.md",
