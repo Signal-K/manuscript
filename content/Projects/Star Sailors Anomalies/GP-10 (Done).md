@@ -18,3 +18,6 @@ Minimum requirement ->
 A child issue, GP-11, has been created and will be targeted towards the microservice for validating correct items & crafting recipes.
 
 Some additional context has been added to the Jira issue, which has been handballed to Rhys for completion/filing
+
+--
+Update (20/03/24): I have just seen steps 2 & 3 of the minimum requirements, and I think some additional planning will need to be undertaken as this ticket has been marked as complete. I believe we may have a discrepancy between what was on Jira and what was listed in Obsidian/Quartz
