@@ -236,3 +236,57 @@ These principles, plans/ideas, and tasks can guide the development of the projec
 18. **Carousel and Slider Components**: Design components for displaying images and content in carousels and sliders.
 19. **Chat and Messaging Interfaces**: Create chat and messaging components for user communication.
 20. **Dark Mode Support**: Offer dark mode support for improved user experience in different lighting conditions.
+
+# Mars Rover Planning
+### Tasks
+
+- **Implement Feedback Mechanisms**: Develop features for users to provide feedback on their experiences and findings.
+- **Establish User Roles**: Define and implement different user roles and permissions for access control and specialized functions.
+- **Create Resource Management Tools**: Design tools for users to manage resources efficiently in the game world.
+- **Integrate Scientific References**: Incorporate scientific references and data sources for accuracy and educational value.
+
+### Citizen Science Components
+
+- **User-Generated Annotations**: Allow users to annotate images and data with observations and comments.
+- **Training and Tutorials**: Provide resources to train users in making accurate classifications and observations.
+- **Citizen Science Missions**: Design missions specifically for citizen scientists to contribute data and insights.
+- **Integration with Research Institutes**: Explore partnerships with research institutions to utilize user-contributed data effectively.
+
+### Gameplay Components
+
+- **Weather and Environmental Effects**: Implement dynamic weather and environmental changes that impact gameplay.
+- **Spacecraft Customization**: Allow players to customize and upgrade their spacecraft for improved performance.
+- **Mission Briefings and Debriefings**: Create interfaces for providing mission objectives and reviewing mission outcomes.
+- **Economy Simulation**: Design an in-game economy with supply and demand dynamics to simulate trade and commerce.
+
+### Frontend Components
+
+- **User Dashboard**: Design a personalized dashboard for users to track their progress and manage their settings.
+- **Leaderboard and Achievements UI**: Create a dedicated interface for viewing leaderboards and achievements.
+- **Interactive Tutorials**: Implement tutorials with interactive elements to guide new users.
+- **Minimap and HUD**: Develop minimap and heads-up display (HUD) components for user navigation and information.
+- **Voice Command Interface**: Explore options for implementing a voice command interface for navigation and interaction.
+
+### Plans
+
+- **Integrate Augmented Reality (AR)**: Investigate the potential of AR for enhancing the gameplay experience, particularly for exploration and data visualization.
+- **Partnerships with Research Organizations**: Establish partnerships with research organizations to facilitate the use of user-contributed data in scientific studies.
+- **User-Centric Development**: Focus on user-centric development practices, emphasizing user feedback and iterative improvements.
+- **Social and Competitive Play**: Design features that promote social interactions and competitive gameplay among players.
+
+### Design Principles
+
+- **Modularity and Flexibility**: Ensure modularity and flexibility in design to accommodate future expansions and updates.
+- **Player Autonomy**: Design gameplay mechanics that encourage player choice and agency in how they approach tasks and missions.
+- **Balanced Complexity**: Balance the complexity of gameplay elements to maintain accessibility while offering depth for engaged players.
+- **Historical and Cultural References**: Integrate historical and cultural references into gameplay for added depth and immersion.
+
+
+# Overall task list -> split (priority)
+Assume that everything not included here will not be included in V2 of Star Sailors. 
+
+ 1. Mission matching
+ 2. Better light curves
+ 3. Star types -> insert into narrative properly
+ 4. Character design screen -> animations/object components
+ 5. 
