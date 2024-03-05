@@ -43,9 +43,6 @@ Generating cities/objects based on lightkurve data haha? [[Ideas]]
 ### Design Principles
 
 1. **Exploration and Discovery**: Focus on user exploration and discovery of new planets and alien life forms.
-2. **Base Building**: Incorporate resource management and base-building elements inspired by games like Hades Star and NMS.
-3. **Narrative Engagement**: Create engaging storylines and missions that guide players through the universe.
-4. **Resource Management**: Players should manage and gather resources for survival and growth.
 5. **Variety of Environments**: Introduce a diverse range of star types, planets, and alien life forms.
 6. **User Interaction**: Encourage user participation and contributions to the game world.
 7. **Flexible Gameplay**: Allow different play styles, including text-based and visual explorations.
@@ -66,12 +63,9 @@ Generating cities/objects based on lightkurve data haha? [[Ideas]]
 
 1. **Design Character Selection Screen**: Create an initial screen for users to select their character and preferences.
 2. **Create Starter Missions**: Develop initial missions that match user preferences and guide them in-game.
-3. **Decide on Visual Style**: Choose between a simple text/image-based experience or a 3D world for exploration.
 4. **Implement Data Representation**: Develop methods for representing scientific data (e.g., light curves) in an engaging way.
 5. **Establish Base Planetary Types**: Define different base planet types, including resources and environments.
-6. **Develop Narrative Structure**: Craft storylines around exploring alien life and planets.
 7. **Introduce Multiplayer Features**: Plan and implement multiplayer elements for user interaction.
-8. **Optimize for Mobile**: Ensure the game is optimized for mobile devices for accessibility and user retention.
 
 These principles, plans/ideas, and tasks can guide the development of the project to create an engaging, interactive, and immersive experience for users.
 
@@ -94,8 +88,6 @@ These principles, plans/ideas, and tasks can guide the development of the projec
 
 1. **Create Manual Planet Data**: Manually assign planet names, compositions, and resources based on data and assumptions.
 2. **Calculate Planetary Values**: Develop methods to calculate planetary radius, mass, temperature, and other characteristics using available data.
-3. **Implement Data Filtering**: Set up a filtering system that allows users to change the visual interpretation of data.
-4. **Design Satellite and Mapping Tools**: Plan and create tools for gathering and mapping data in space.
 5. **Remove Outdated Database Schemas**: Merge or remove outdated schemas in Supabase, including tables for sites, replies, planet status, and other unused data tables.
 
 # Full review
@@ -103,32 +95,11 @@ These principles, plans/ideas, and tasks can guide the development of the projec
 
 1. **Initial Planet Selection**: Select six initial planets manually for the upcoming alpha version to provide flexibility in data collection without creating complex pipelines.
 2. **Data Representation**: Use calculated values such as planet radius and orbital period to provide insights into planet composition and temperature. Utilize existing databases like Lightkurve and Exofop for accurate data cross-referencing.
-3. **Resource Allocation**: Assign resources to planets based on characteristics such as anomaly metallicity, radius, mass, orbital period, and star type.
-4. **Navigational Waypoints**: Use globular clusters as navigational waypoints to guide players in the universe.
-5. **Auto-generated Descriptions**: Generate descriptions and visuals based on planet data and narrative.
-6. **Modular Design**: Break down user interfaces and features into modular components for easier maintenance and scalability.
-7. **Usability and Accessibility**: Implement design choices that enhance the usability and accessibility of the application for all users.
-8. **Performance Optimization**: Focus on optimizing both frontend and backend components for a smooth and efficient user experience.
-9. **Feedback Incorporation**: Continuously gather and integrate user feedback to improve the overall design and functionality.
-10. **Consistency**: Maintain a consistent design language throughout the application to enhance the user experience.
-11. **Progressive Disclosure**: Gradually reveal information to avoid overwhelming users and guide them through the application effectively.
-12. **Responsive Design**: Design interfaces that adapt seamlessly across different devices and screen sizes.
 13. **Data Security**: Prioritize data protection and user privacy in all aspects of design and functionality.
 14. **Gamification**: Integrate elements of gamification to enhance user engagement and motivation.
-15. **Adaptive Design**: Allow the application to adjust and respond to different user contexts and needs.
-16. **Visual Hierarchy**: Utilize visual hierarchy to guide user focus and create intuitive navigation paths.
-17. **Error Handling**: Design error handling mechanisms that are user-friendly and provide clear guidance on how to proceed.
-18. **Internationalization**: Support multiple languages and cultures to make the application accessible to a broader audience.
-19. **Collaborative Tools**: Facilitate user collaboration and community building through shared spaces and features.
-20. **Continuous Improvement**: Strive for ongoing enhancements and updates based on data analysis and user insights.
 
 ### Plans/Ideas:
-
-1. **Interactive Data Visualization**: Implement a filter-based, interactive toggle bar for data interpretation, allowing users to customize visual representation.
-2. **Mapping and Satellite Tools**: Set up satellite and mapping tools for data gathering, including telescopes and probe droids for gathering light curve data and exploring anomalies.
-3. **Space Rigging Interface**: Develop a routing interface for deploying telescopes and probe droids in a grid/lattice network to gather data and explore anomalies.
 4. **User Journey Mapping**: Create a comprehensive map of user journeys to identify key touchpoints and areas for enhancement.
-5. **Dynamic Content Generation**: Explore the use of AI and algorithms to dynamically generate content based on user interactions and data.
 6. **Community Events**: Organize events and challenges to engage the user base and foster a sense of community.
 7. **Cross-platform Accessibility**: Ensure the application is accessible across various platforms, including desktop, mobile, and web.
 8. **Data Visualization Tools**: Create advanced tools for visualizing and interpreting data in an engaging and insightful manner.
@@ -288,5 +259,15 @@ Assume that everything not included here will not be included in V2 of Star Sail
  1. Mission matching
  2. Better light curves
  3. Star types -> insert into narrative properly
- 4. Character design screen -> animations/object components
- 5. 
+ 4. Planet types & stats -> evaluation & narrative insertion
+ 5. Character design screen -> animations/object components
+ 6. Compare narrative points with December megadoc
+ 7. Content descriptions (specifically for anomalies). What other data/content needs to be added?
+ 8. Determine navigation system/methodologies
+ 9. Improve resource allocation formulae
+ 10. Interface similar to the `/explore` route for deploying structures and interacting with them (static & stationary types)
+ 11. Asset inheritance -> probe droids, satellites, structures, etc
+ 12. Better 'galaxy map'
+ 13. 
+
+(and then split these up)
