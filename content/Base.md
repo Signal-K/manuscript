@@ -53,21 +53,11 @@ Generating cities/objects based on lightkurve data haha? [[Ideas]]
 1. **Character Customisation**: Allow users to select their character type, home planet, and play style at the start.
 2. **Mission Matching**: Assign starter missions based on user preferences to guide them in collecting resources and advancing.
 3. **Visual vs. Text-based Content**: Decide between a simple text/image-based experience or a more complex 3D world.
-4. **Data Representation**: Explore ways to represent data such as light curves in a more engaging way.
-5. **Narrative Focus**: Create a narrative centered around discovering aliens and life forms to maintain user interest.
-6. **Star Types and Planetary Habitats**: Define different star and planet types and the potential for habitability.
-7. **Gameplay Structure**: Develop a structure that starts with exploring a chosen base planet and then expands to more complex interactions.
-8. **User Retention**: Aim for high user retention by offering compelling gameplay and frequent content updates.
 
 ### Tasks
 
 1. **Design Character Selection Screen**: Create an initial screen for users to select their character and preferences.
 2. **Create Starter Missions**: Develop initial missions that match user preferences and guide them in-game.
-4. **Implement Data Representation**: Develop methods for representing scientific data (e.g., light curves) in an engaging way.
-5. **Establish Base Planetary Types**: Define different base planet types, including resources and environments.
-7. **Introduce Multiplayer Features**: Plan and implement multiplayer elements for user interaction.
-
-These principles, plans/ideas, and tasks can guide the development of the project to create an engaging, interactive, and immersive experience for users.
 
 # Planet data pipelines
 ### Design Principles:
@@ -75,19 +65,8 @@ These principles, plans/ideas, and tasks can guide the development of the projec
 1. **Initial Planet Selection**: Focus on selecting six initial planets manually for the upcoming alpha version, which allows flexibility in data collection without creating complex pipelines.
 2. **Data Representation**: Use calculated values such as planet radius and orbital period to provide insights into planet composition and temperature. Utilize existing databases like Lightkurve and Exofop for accurate data cross-referencing.
 3. **Resource Allocation**: Assign resources to planets based on characteristics such as anomaly metallicity, radius, mass, orbital period, and star type.
-4. **Navigational Waypoints**: Consider using globular clusters as navigational waypoints to guide players in the universe.
-5. **Auto-generated Descriptions**: Generate descriptions and visuals based on planet data and the narrative.
-
-### Plans/Ideas:
-
-1. **Interactive Data Visualization**: Implement a filter-based, interactive toggle bar for data interpretation, allowing users to customize visual representation.
-2. **Mapping and Satellite Tools**: Set up satellite and mapping tools for data gathering, including telescopes and probe droids for gathering light curve data and exploring anomalies.
-3. **Space Rigging Interface**: Develop a routing interface for deploying telescopes and probe droids in a grid/lattice network to gather data and explore anomalies.
 
 ### Tasks:
-
-1. **Create Manual Planet Data**: Manually assign planet names, compositions, and resources based on data and assumptions.
-2. **Calculate Planetary Values**: Develop methods to calculate planetary radius, mass, temperature, and other characteristics using available data.
 5. **Remove Outdated Database Schemas**: Merge or remove outdated schemas in Supabase, including tables for sites, replies, planet status, and other unused data tables.
 
 # Full review
@@ -95,15 +74,10 @@ These principles, plans/ideas, and tasks can guide the development of the projec
 
 1. **Initial Planet Selection**: Select six initial planets manually for the upcoming alpha version to provide flexibility in data collection without creating complex pipelines.
 2. **Data Representation**: Use calculated values such as planet radius and orbital period to provide insights into planet composition and temperature. Utilize existing databases like Lightkurve and Exofop for accurate data cross-referencing.
-13. **Data Security**: Prioritize data protection and user privacy in all aspects of design and functionality.
-14. **Gamification**: Integrate elements of gamification to enhance user engagement and motivation.
 
 ### Plans/Ideas:
 4. **User Journey Mapping**: Create a comprehensive map of user journeys to identify key touchpoints and areas for enhancement.
 6. **Community Events**: Organize events and challenges to engage the user base and foster a sense of community.
-7. **Cross-platform Accessibility**: Ensure the application is accessible across various platforms, including desktop, mobile, and web.
-8. **Data Visualization Tools**: Create advanced tools for visualizing and interpreting data in an engaging and insightful manner.
-9. **Gamification Features**: Integrate game-like elements such as achievements, rewards, and quests to increase user motivation.
 10. **Customization Options**: Provide users with customization options for avatars, ships, and other aspects of their in-game experience.
 11. **Educational Resources**: Offer educational materials and resources to help users understand the scientific concepts behind the game.
 12. **Ecosystem Collaboration**: Develop partnerships with other organizations or games to enhance the user experience and content variety.
@@ -259,15 +233,21 @@ Assume that everything not included here will not be included in V2 of Star Sail
  1. Mission matching
  2. Better light curves
  3. Star types -> insert into narrative properly
- 4. Planet types & stats -> evaluation & narrative insertion
+ 4. Planet types & stats -> evaluation & narrative insertion. Different base planet types
  5. Character design screen -> animations/object components
  6. Compare narrative points with December megadoc
  7. Content descriptions (specifically for anomalies). What other data/content needs to be added?
- 8. Determine navigation system/methodologies
+ 8. Determine navigation system/methodologies, including waypoints (globular clusters?)
  9. Improve resource allocation formulae
  10. Interface similar to the `/explore` route for deploying structures and interacting with them (static & stationary types)
  11. Asset inheritance -> probe droids, satellites, structures, etc
  12. Better 'galaxy map'
- 13. 
+ 13. Starter missions
+ 14. Map existing user flow in V1, current drafts of V2, and plan for what the production fow should be
+ 15. Determine formula for community events (aka data days)
+ 16. 
 
 (and then split these up)
+
+# V3 ideas
+1. Can we integrate with achievements like on Google Play? (this would require development of a native app)
