@@ -80,36 +80,24 @@ Generating cities/objects based on lightkurve data haha? [[Ideas]]
 6. **Community Events**: Organize events and challenges to engage the user base and foster a sense of community.
 10. **Customization Options**: Provide users with customization options for avatars, ships, and other aspects of their in-game experience.
 11. **Educational Resources**: Offer educational materials and resources to help users understand the scientific concepts behind the game.
-12. **Ecosystem Collaboration**: Develop partnerships with other organizations or games to enhance the user experience and content variety.
 13. **Augmented Reality Integration**: Explore the potential of integrating AR features for immersive gameplay and data visualization.
-14. **Storytelling Elements**: Infuse the game with compelling narratives and stories to enhance user engagement.
 15. **Competition and Leaderboards**: Introduce competitive elements and leaderboards to foster healthy competition among users.
 16. **Achievement System**: Implement an achievement system to reward users for reaching milestones and completing tasks.
 17. **User Engagement Metrics**: Monitor and analyze user engagement metrics to identify opportunities for improvement.
 18. **Cross-promotion Opportunities**: Collaborate with other platforms or games for cross-promotion opportunities and shared content.
 19. **Seasonal Events**: Plan seasonal or special events to keep the gameplay fresh and engaging for users.
-20. **Feedback-Driven Development**: Continuously iterate on the application based on user feedback and usage data.
 
 ### Tasks:
 
-1. **Create Manual Planet Data**: Manually assign planet names, compositions, and resources based on data and assumptions.
-2. **Calculate Planetary Values**: Develop methods to calculate planetary radius, mass, temperature, and other characteristics using available data.
 3. **Implement Data Filtering**: Set up a filtering system that allows users to change the visual interpretation of data.
 4. **Design Satellite and Mapping Tools**: Plan and create tools for gathering and mapping data in space.
-5. **Remove Outdated Database Schemas**: Merge or remove outdated schemas in Supabase, including tables for sites, replies, planet status, and other unused data tables.
-6. **Set Up API Routes**: Establish and document necessary API routes for handling data collection, retrieval, and user interactions.
-7. **Create Frontend Components**: Design and implement React components for various parts of the user interface.
 8. **Optimize Backend Services**: Improve backend services for better performance and scalability.
 9. **Develop User Authentication**: Implement secure user authentication and authorization mechanisms.
 10. **Integrate Third-Party Tools**: Explore and integrate third-party tools and APIs for enhanced functionality.
 11. **Implement Error Handling**: Create robust error handling for user-facing components and backend processes.
 12. **Design User Onboarding**: Develop an onboarding process to guide new users through the application effectively.
 13. **Optimize Database Queries**: Review and optimize database queries for faster data retrieval.
-14. **User Interface Improvements**: Continuously enhance the user interface for better usability and aesthetics.
-15. **Bug Fixing**: Regularly identify and fix bugs in both frontend and backend components.
-16. **Implement Gamification**: Design and integrate gamification features like achievements, rewards, and challenges.
 17. **User Data Management**: Implement systems for managing and securing user data, including profiles and preferences.
-18. **Cross-Platform Testing**: Test the application across different platforms to ensure consistency and performance.
 19. **Create Documentation**: Provide thorough documentation for developers and end-users to facilitate usage and maintenance.
 20. **Continuous Integration and Deployment**: Set up automated CI/CD pipelines for efficient code deployment and testing.
 
@@ -120,44 +108,7 @@ Generating cities/objects based on lightkurve data haha? [[Ideas]]
 3. **Feedback and Recognition**: Provide feedback and rewards to users for their contributions, encouraging continued participation.
 4. **Collaboration Tools**: Tools that enable users to collaborate on citizen science projects and share findings.
 5. **Data Aggregation**: Mechanisms for aggregating and organizing user-contributed data for analysis and research.
-6. **Interactive Visualizations**: Display user-contributed data using interactive visualizations for better understanding and engagement.
-7. **Real-Time Data Updates**: Systems for updating and displaying user-contributed data in real-time.
-8. **Educational Resources**: Provide resources and guides to help users understand the science behind their contributions.
-9. **Community Forums**: Create spaces for users to discuss citizen science projects and share insights.
-10. **Project Discovery**: Tools for users to discover and participate in new citizen science projects based on their interests.
-11. **User Impact Tracking**: Allow users to track their contributions and the impact they've made in citizen science projects.
 12. **Anomaly Detection**: Use user-contributed data to identify anomalies and potential areas for further research.
-13. **Data Sharing**: Facilitate data sharing between users and researchers to advance scientific knowledge.
-14. **User Mentorship**: Provide mentorship opportunities for experienced users to guide and support new contributors.
-15. **Open Data Access**: Make aggregated data accessible to the wider community for research and analysis.
-16. **Reward System**: Establish a system of rewards or recognition for significant user contributions.
-17. **User Analytics**: Analyze user contribution patterns to tailor citizen science projects and engagement strategies.
-18. **Cross-Project Integration**: Explore opportunities for integrating user data across multiple projects and platforms.
-19. **Mobile Compatibility**: Ensure citizen science components are accessible and usable on mobile devices.
-20. **Privacy and Ethics**: Prioritize user privacy and ethical data use in all aspects of citizen science projects.
-
-### Gameplay Components:
-
-1. **Structures and Environment**: Design and manage in-game structures, environments, and world-building.
-2. **Player Movement**: Implement frontend and backend handling of player navigation and movement in the game world.
-3. **Inventory and Items**: Create components for managing player inventory, items, and their interactions.
-4. **Skills and Abilities**: Develop systems for player skill progression, abilities, and skill trees.
-5. **Collaboration and Interaction**: Facilitate player collaboration and interaction with other players.
-6. **Pets and Companions**: Design components for managing in-game pets and companions.
-7. **Quests and Challenges**: Develop quests and challenges to guide players and provide goals.
-8. **Combat Mechanics**: Implement and fine-tune combat mechanics and player interactions.
-9. **Crafting and Upgrades**: Create systems for crafting items and upgrading player abilities and equipment.
-10. **Achievement System**: Establish an achievement system to reward players for reaching milestones.
-11. **Leaderboards and Rankings**: Introduce leaderboards and rankings to foster competition and engagement.
-12. **Seasonal and Special Events**: Plan and implement events to keep the gameplay fresh and engaging.
-13. **Real-Time Multiplayer**: Explore real-time multiplayer options for player interaction and collaboration.
-14. **Dynamic Environments**: Create dynamic environments that evolve based on player actions and in-game events.
-15. **Economy and Trading**: Design in-game economy and trading systems for player commerce.
-16. **Customizable Avatars**: Allow players to customize their avatars and other aspects of their identity.
-17. **Player Progression**: Develop a clear progression path for players, including levels, experience points, and rewards.
-18. **Story-driven Gameplay**: Incorporate narratives and stories to enhance player immersion and engagement.
-19. **Data-driven Balance**: Use data analytics to balance gameplay mechanics and ensure fairness.
-20. **Community Features**: Create community features such as forums and groups to enhance player interaction.
 
 ### Frontend Components:
 
@@ -226,6 +177,98 @@ Generating cities/objects based on lightkurve data haha? [[Ideas]]
 - **Balanced Complexity**: Balance the complexity of gameplay elements to maintain accessibility while offering depth for engaged players.
 - **Historical and Cultural References**: Integrate historical and cultural references into gameplay for added depth and immersion.
 
+### Gameplay
+
+1. **Custom Rover Actions**:
+    
+    - Task: Create custom rover actions using a central menu.
+    - Quote: "I'm thinking that we use the central menu to create buildings and other actions, then for actions that can be done via clicking on a structure/icon (e.g. sending out a rover when you've already got one), we just lay out the structures randomly across the landscape."
+2. **Structure Interactions**:
+    
+    - Task: Design "internal" areas for interacting with structures.
+    - Quote: "Could you come up with a design for what the 'internal' areas will look like (i.e. what would it look like if you're interacting with a particular structure)."
+3. **Feed Design**:
+    
+    - Task: Continue with a minimal format for the feed.
+    - Quote: "For the feed I think we can just continue with the minimal format for now."
+4. **Dynamic Content Updates**:
+    
+    - Task: Implement systems for real-time updates in the game world.
+    - Quote: "Ensure the application is optimized for mobile devices for accessibility and user retention."
+5. **Gamification Features**:
+    
+    - Task: Integrate gamification elements like achievements, rewards, and quests.
+    - Quote: "Integrate game-like elements such as achievements, rewards, and quests to increase user motivation."
+
+### Citizen Science
+
+1. **User Data Collection**:
+    
+    - Task: Create tools for users to submit data and observations.
+    - Quote: "Components for users to submit data and observations, such as forms and interactive interfaces."
+2. **Data Validation Systems**:
+    
+    - Task: Implement systems for validating user contributions.
+    - Quote: "Systems for validating user contributions to ensure data quality and reliability."
+3. **Feedback and Recognition**:
+    
+    - Task: Provide feedback and rewards for user contributions.
+    - Quote: "Provide feedback and rewards to users for their contributions, encouraging continued participation."
+4. **Data Sharing with Researchers**:
+    
+    - Task: Facilitate data sharing between users and researchers.
+    - Quote: "Facilitate data sharing between users and researchers to advance scientific knowledge."
+5. **Community Forums**:
+    
+    - Task: Create spaces for users to discuss citizen science projects.
+    - Quote: "Create spaces for users to discuss citizen science projects and share insights."
+
+### Dataflow
+
+1. **Lightkurve and Exofop Integration**:
+    
+    - Task: Utilize Lightkurve and Exofop for data cross-referencing.
+    - Quote: "Utilize existing databases like Lightkurve and Exofop for accurate data cross-referencing."
+2. **Calculate Planetary Values**:
+    
+    - Task: Develop methods to calculate planetary values such as radius, mass, and temperature.
+    - Quote: "Develop methods to calculate planetary radius, mass, temperature, and other characteristics using available data."
+3. **Data Filtering Systems**:
+    
+    - Task: Implement data filtering systems for data interpretation.
+    - Quote: "Set up a filtering system that allows users to change the visual interpretation of data."
+4. **Interactive Data Visualization**:
+    
+    - Task: Implement a filter-based, interactive toggle bar for data interpretation.
+    - Quote: "Implement a filter-based, interactive toggle bar for data interpretation, allowing users to customize visual representation."
+5. **Mapping and Satellite Tools**:
+    
+    - Task: Set up satellite and mapping tools for data gathering.
+    - Quote: "Set up satellite and mapping tools for data gathering, including telescopes and probe droids for gathering light curve data and exploring anomalies."
+
+### Classifications
+
+1. **Initial Planet Selection**:
+    
+    - Task: Manually select initial planets for the alpha version.
+    - Quote: "Select six initial planets manually for the upcoming alpha version to provide flexibility in data collection without creating complex pipelines."
+2. **Resource Allocation**:
+    
+    - Task: Assign resources to planets based on their characteristics.
+    - Quote: "Assign resources to planets based on characteristics such as anomaly metallicity, radius, mass, orbital period, and star type."
+3. **Navigational Waypoints**:
+    
+    - Task: Use globular clusters as navigational waypoints.
+    - Quote: "Consider using globular clusters as navigational waypoints to guide players in the universe."
+4. **Auto-generated Descriptions**:
+    
+    - Task: Create auto-generated descriptions and visuals based on data and narrative.
+    - Quote: "Generate descriptions and visuals based on planet data and narrative."
+5. **User Impact Tracking**:
+    
+    - Task: Track the impact of user contributions in citizen science projects.
+    - Quote: "Allow users to track their contributions and the impact they've made in citizen science projects."
+
 
 # Overall task list -> split (priority)
 Assume that everything not included here will not be included in V2 of Star Sailors. 
@@ -245,9 +288,24 @@ Assume that everything not included here will not be included in V2 of Star Sail
  13. Starter missions
  14. Map existing user flow in V1, current drafts of V2, and plan for what the production fow should be
  15. Determine formula for community events (aka data days)
- 16. 
+ 16. Leaderboards/faction competitions
+### /explore route
+- **Weather and Environmental Effects**: Implement dynamic weather and environmental changes that impact gameplay.
+- **Spacecraft Customization**: Allow players to customize and upgrade their spacecraft for improved performance.
+- **Mission Briefings and Debriefings**: Create interfaces for providing mission objectives and reviewing mission outcomes.
+- **Economy Simulation**: Design an in-game economy with supply and demand dynamics to simulate trade and commerce.
+### economy
+- **Economy Simulation**: Design an in-game economy with supply and demand dynamics to simulate trade and commerce.
 
-(and then split these up)
+### gameplay UI
+- **Minimap and HUD**: Develop minimap and heads-up display (HUD) components for user navigation and information.
+- **Voice Command Interface**: Explore options for implementing a voice command interface for navigation and interaction.
+
+### Frontend
+- **User Dashboard**: Design a personalized dashboard for users to track their progress and manage their settings.
+
+### User flow
+**Interactive Tutorials**: Implement tutorials with interactive elements to guide new users.
 
 # V3 ideas
 1. Can we integrate with achievements like on Google Play? (this would require development of a native app)
