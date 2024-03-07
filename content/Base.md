@@ -271,6 +271,13 @@ Generating cities/objects based on lightkurve data haha? [[Ideas]]
 
 
 # Overall task list -> split (priority)
+
+### Order of operations
+1. User signs up
+2. Choice of character, home planet
+3. User explore surroundings, visit planet, make a start
+4. Once they colonise, we then create some missions (AI - )
+
 Assume that everything not included here will not be included in V2 of Star Sailors. 
 
  1. Mission matching
@@ -301,11 +308,16 @@ Assume that everything not included here will not be included in V2 of Star Sail
 - **Minimap and HUD**: Develop minimap and heads-up display (HUD) components for user navigation and information.
 - **Voice Command Interface**: Explore options for implementing a voice command interface for navigation and interaction.
 
-### Frontend
+### Frontend (components/routes)
 - **User Dashboard**: Design a personalized dashboard for users to track their progress and manage their settings.
+	- Home planet stats & other db blocks
+- Threads [[ComponentList]]
 
 ### User flow
 **Interactive Tutorials**: Implement tutorials with interactive elements to guide new users.
+
+### User content
+* Farcaster integration (V3, but planning for other protocols)
 
 # V3 ideas
 1. Can we integrate with achievements like on Google Play? (this would require development of a native app)
