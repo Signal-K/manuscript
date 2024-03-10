@@ -160,7 +160,7 @@ Generating cities/objects based on lightkurve data haha? [[Ideas]]
 - **User Dashboard**: Design a personalized dashboard for users to track their progress and manage their settings.
 - **Leaderboard and Achievements UI**: Create a dedicated interface for viewing leaderboards and achievements.
 - **Interactive Tutorials**: Implement tutorials with interactive elements to guide new users.
-- **Minimap and HUD**: Develop minimap and heads-up display (HUD) components for user navigation and information.
+- **Minimap and HUD**: Develop minimap and heads-up display (HUD) components for user navigation and information. -> In progress
 - **Voice Command Interface**: Explore options for implementing a voice command interface for navigation and interaction.
 
 ### Plans
@@ -270,13 +270,22 @@ Generating cities/objects based on lightkurve data haha? [[Ideas]]
     - Quote: "Allow users to track their contributions and the impact they've made in citizen science projects."
 
 
-# Overall task list -> split (priority)
+# V2 Plan
+## Storyline
+%% 1. **Initial planet classification**
+2. Subsequent planet classifications
+3. "Life" classifications (i.e. animal tagging, other zooniverse projects)
+4. Cloudspotting
+5. **Rover assets**
+6. Build structures for resource generation, other construction, and classification %%
+7. Minimal rover & other vehicle (spaceship?) control - spaceship could be moved back to V2.1 as it will likely require Unity, unless we go with an ultra minimal layout like a 2d js game
+## Overall task list -> split (priority)
 
 ### Order of operations
 1. User signs up
 2. Choice of character, home planet
 3. User explore surroundings, visit planet, make a start
-4. Once they colonise, we then create some missions (AI - )
+4. Once they colonise, we then create some missions (AI - maybe later, for now we just have a manual progression if possible to save costs, time?)
 
 Assume that everything not included here will not be included in V2 of Star Sailors. 
 
@@ -307,6 +316,7 @@ Assume that everything not included here will not be included in V2 of Star Sail
 ### gameplay UI
 - **Minimap and HUD**: Develop minimap and heads-up display (HUD) components for user navigation and information.
 - **Voice Command Interface**: Explore options for implementing a voice command interface for navigation and interaction.
+* Dashboard -> https://v0.dev/r/3QARvTGQHvg
 
 ### Frontend (components/routes)
 - **User Dashboard**: Design a personalized dashboard for users to track their progress and manage their settings.
