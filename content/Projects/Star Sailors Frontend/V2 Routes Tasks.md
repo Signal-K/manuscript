@@ -14,5 +14,7 @@
 * I think we'll show the user's spaceships, automations, and planet charicatures on the index route. At the bottom we'll have the navigation area, which will allow for the accordions to be selected
 * .limit(3); // Set this to be owned planets -> for planet gallery card/garden
 * It appears now that the sectors can be visited from the dashboard (i.e. the deeplinks work!)
-* Perhaps we could show a grouping of public sectors underneath the accordion area?
+* Perhaps we could show a grouping of public sectors underneath the accordion area?\
+		* I'm having a go at experimenting with what could go below the accordions, currently we've got the sectors & inventory working. Defeats the purpose of the accordions, but while they've been a good stopgap at helping me/us figure out what needs to be shown, I think (thanks to [@Rhys Campbell](https://signalkineticsgroup.slack.com/team/U05MVAXPMCL)) that we've possibly found a better way.  
 * Could the bg image be made up of a representation of your colony? "Our space colony".mp3
+* ![[Pasted image 20240416171347.png]]
