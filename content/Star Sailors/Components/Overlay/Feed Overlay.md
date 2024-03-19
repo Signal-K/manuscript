@@ -1,0 +1,2 @@
+I am temporarily removing the Feed Overlay, and [launch] button, from all frontend components and pages. The reason for this is because we are exploring the bento grid arrangement and I don't need the clutter from the overlay, as well as re-organising the layouts. Some pages have the overlay included, sometimes it's included in the layout -> it's a huge mess.
+We will add it again soon, I just need to figure out how we keep the launch pad/planet overlay as well.
