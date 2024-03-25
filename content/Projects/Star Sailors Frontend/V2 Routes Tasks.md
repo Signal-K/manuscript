@@ -20,3 +20,10 @@
 * ![[Pasted image 20240416171347.png]]
 
 * The onboarding area/index page could house a bento box until we get the user comfortable with the VP-minimal UI
+* Bento box -> your planet, your vehicle, citizen module, mission list, inventory
+* Possibly we could have an option to toggle the bentogrid component, or highlight the missions. Determining if this is a feasible compromise and when/how to execute/introduce this will be a decision for Rhys
+* Another big error -> too many components on the page causes the scroll to go past background/cover image.
+
+# Collecting resources
+* Same structure as with the old crypto game from 2022 -> just send a rover there and have it eat up supplies? Create a function that will determine how long the rover has been "mining", then click "end", microservice calculates rewards
+* I was thinking that we could possibly have a very stripped back control panel for mobile, maybe even only one function, but then I remembered that it will be a mobile-first (or in theory, anyway, at minimum it will need feature parity between desktop and mobile) deliverable and thus we can't lock features out of the mobile inference.
