@@ -1,0 +1,1 @@
+A note that the `/explore/[id].tsx` route takes `basePlanets`, not `basePlanetSectors` as a parameter. So that means that users will be exploring over an entire planet, not a specifc sector. I think this is something that needs to be fixed, as we have structures & resources forming based on sector. 

@@ -9,6 +9,8 @@
 * Need to get planet data to filter into sector data - currently it's all disorganised see ![[Pasted image 20240415133401.png]]
 
 # Explore
+* Sector route -> [[Explore.tsx]] 
+* Fix background image issue on `/explore/[id].tsx` route
 
 # Index
 * I think we'll show the user's spaceships, automations, and planet charicatures on the index route. At the bottom we'll have the navigation area, which will allow for the accordions to be selected
@@ -23,7 +25,11 @@
 * Bento box -> your planet, your vehicle, citizen module, mission list, inventory
 * Possibly we could have an option to toggle the bentogrid component, or highlight the missions. Determining if this is a feasible compromise and when/how to execute/introduce this will be a decision for Rhys
 * Another big error -> too many components on the page causes the scroll to go past background/cover image.
+* Or could your "home page" just be an interactable home base with a menu? So essentially take `/planets/{[your]id}` and move that to index route?
 
 # Collecting resources
 * Same structure as with the old crypto game from 2022 -> just send a rover there and have it eat up supplies? Create a function that will determine how long the rover has been "mining", then click "end", microservice calculates rewards
 * I was thinking that we could possibly have a very stripped back control panel for mobile, maybe even only one function, but then I remembered that it will be a mobile-first (or in theory, anyway, at minimum it will need feature parity between desktop and mobile) deliverable and thus we can't lock features out of the mobile inference.
+
+# Classifications
+* I think we should move everything into a single `classifications` table, have a single table for everything that is going to be catalogued, and then differentiate between them in the same way we have a single table for every item type. I will review this with Dave.
