@@ -1,6 +1,10 @@
 # Planets
 1. I think that all structures on a planet's sectors will be accessible from the planet page, eventually. For now, this is going to cause all sorts of issues, so let's hold off on this for now.
 2. How does tree data affect what's going on here?2
+
+### Ring/layout
+1. Currently the ring layout just has the base images for items in the inventory, no functionality in terms of assuring the planet/sector has those items
+	1. I'm going to create a function to go through a planet and see all the items/structures in the sector, and vice versa
 ## Sectors
 * Generated bg images/maps for each sector route
 * Generate complete make-up/composition when creating a new sector, including confirming that the rover images change each time
@@ -46,6 +50,7 @@
 * I just realised that the telescope selector doesn't require the telescope to exist on the planet (afaik at the moment)
 	* We have done this successfully for the sectors/{$id} route, though, which is good.
 
-
-## Hosting
+### Rovers/Automatons
+Each of these will be introduced in the `inventoryITEMS` table, and they will have a parent item of id: `22`, as this is the "Vehicle launch structure". Not all of these will be vehicles, however for now we are working on rovers so this is the best way to do it for now.
+# Hosting
 * We'll host all the flask API(s) on a few raspberry Pis, thanks to Rhys
