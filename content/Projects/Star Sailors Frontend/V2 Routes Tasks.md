@@ -61,3 +61,29 @@ Each of these will be introduced in the `inventoryITEMS` table, and they will ha
 * SGV2-20: I will set rovers to be craftable using 1 piece of iron, this will be a placeholder crafting recipe (see [[Crafting]]) and will not use the crafting microservice/API route during this phase of development. Items will be collected just by the rover, there won’t be any special modifications/'rover arms' etc. for now.
 # Hosting
 * We'll host all the flask API(s) on a few raspberry Pis, thanks to Rhys
+
+
+# Review (4-7/5/2024)
+I would say the goals are as follows for V2:
+1. Voidpet interface, supporting all below features
+2. Crafting
+3. Planets, sectors, and other "settings"
+4. Working inventory across structures, blocks/items, resources, tools, vehicles/automatons
+5. Mining, construction, crafting & travel mechanics
+6. Following citizne science components:
+	1. Classify planets -> lightkurves, compositions, etc
+	2. Classify rover data
+	3. Classify cloud data
+	4. 1x lifeform tagging classification e.g. burrowing owls
+7. Begin the narrative development & tie-in with old #Star-Sailors writings
+8. Content population at a base level for "basic" planet data
+	1. Complex routes beyond basic mineral calculation (for sector deposits), planet types (and basic stats as per v2 alpha stats component), generating data points (e.g. lightkurves to display), and a semi-automated verification system for classifications will be documented, but not implemented until subsequent versions.
+9. Upgrading database schema for `"basePlanets` collections & other objects/entities to be classified (aka anomalies)
+10. Music & other media
+
+I believe we should look into minigames, broader rover/construction configurations & visual components in V2.1. Main goal for V2.1 will be consolidating our success & upgrades, adding more narrative content, and beginning a full stack migration towards implementing the next step in terms of visuals & content population. Of course, we will also be implementing user requests as well. 
+
+# Inventory standards
+All items will be created and deployed to a planet, and can then be migrated to any sector on that planet.
+If it's on a planet but not a sector, it's not deployed
+Hopefully this fixes some of the persistent errors I've been having as well as maybe providing some actual utility at some point (I don't want to be adding this confusion just for the sake of my immediate programming mood :))
