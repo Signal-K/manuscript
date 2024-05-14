@@ -5,6 +5,36 @@ tags:
     - Narrative
     - Planning
 ---
+# List of structures
+
+As of the time of writing, we’ve got the following structures defined in inventoryITEMS:
+
+|**id**|**Name**|**description**|
+|---|---|---|
+|12|Telescope Signal Receiver|The base telescope. Provides a base that can then have other add-ons built on top, as well as serving as the base for all off-planet observatories|
+|14|Transiting Telescope|An add-on to your telescope base (12) that allows users to view transits|
+|22|Vehicle Structure|Allows vehicles to dock to them, provides a method for deployment|
+||||
+||||
+||||
+||||
+||||
+||||
+||||
+||||
+||||
+
+Structures will be split into the following categories:
+
+1. Those that provide citizen science data → read/write (they will provide a platform to fetch/request data, return it, and then allow the user to make the classification
+    
+
+# Telescopes
+
+# To-Do
+
+1. For each type of citizen science interaction, users will
+
 
 Structure narrative
 How will structures be used in Star Sailors?
