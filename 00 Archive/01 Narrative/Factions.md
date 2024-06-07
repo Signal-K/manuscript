@@ -1,0 +1,1 @@
+A note that there are multiple columns in `public.profiles` table schema that mention factions. So that's something we're going to need to take a look at.
