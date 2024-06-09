@@ -3,6 +3,7 @@ tags:
   - Sprint-Planning
   - Code-Snippets
   - Components
+  - Editing
 sprint: obsidian://open?vault=Liam's%20vault&file=07%20Development%2FSprints%2FSecond%20Mission%20Group
 ---
 
@@ -12,6 +13,8 @@ Some questions that need to be answered:
 For sprint 1 & 2, we will suffice with a ⌘ button (i.e. click this to see overflow). We don't have enough entities to make this problematic.
 Or, we could have an arrow system, similar to the anomaly switcher in the header.
 We can look into a long-term solution for this in sprint 3.
+
+Something I just thought of is potentially we could structure all telescopes to be together, so after a while `12` & `14` become one structure with submodules...this way, there may only need to be a handful of different structure types for each anomaly (e.g. you wouldn't put a telescope-type structure on an astrobotany experiment...or could you?), however this is then assuming that there's going to be a limit to the complexity of certain anomaly types. Which I disagree with, fundamentally, and even if it were the case I don't want to develop standards and philosophies around [potential] limitations. SO...we can keep the combining idea; that's a good one - but we won't introduce the limitations idea.
 
 #### How can we create rich context-background images? 
 * We will require new icons too for the structures & automatons

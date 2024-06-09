@@ -1,7 +1,7 @@
 ---
 connie-publish: true
 connie-page-id: "16678914"
-banner: "https://resources.afl.com.au/photo-resources/2024/06/07/66ff7c48-e1d3-4ea7-a675-08b36b75d8ec/Sunday-teams-R13.jpg?width=902&height=536"
+banner: https://resources.afl.com.au/photo-resources/2024/06/07/66ff7c48-e1d3-4ea7-a675-08b36b75d8ec/Sunday-teams-R13.jpg?width=902&height=536
 ---
 Current Mission List:
 ```tsx
