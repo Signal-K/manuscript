@@ -21,8 +21,8 @@ I think I would define the narrative goals for the second mission group as follo
 So I think we'll take them back to the home page initially and maybe have a toolbar there with some info along the lines of "you've completed your first part of the tutorial! You can now go [here] to do the next part!". Additionally, we can also give our users the option to just classify TIC Ids if that's all they want to do for now. This means we'll have to add in a function that fetches random lightcurve images, as currently the api only pulls in pre-defined images that are matched to the TIC ID [configuration] value of the anomaly in the `anomalies` table.
 
 After that, we'll lead them into some open-ended widgets, which will consist of them doing the following:
-1. Deploying their automatons to collect resources
-2. When the automaton finds a rich resource vein, the user will have the option to start a mining operation, this way they don't need to deal with pesky automatons and their limited (for now) capabilities. The mechanism of reward collection will remain roughly the same, however (Mission 1)
+~~1. Deploying their automatons to collect resources~~
+~~2. When the automaton finds a rich resource vein, the user will have the option to start a mining operation, this way they don't need to deal with pesky automatons and their limited (for now) capabilities. The mechanism of reward collection will remain roughly the same, however (Mission 1)~~
 3.  Constructing a "Meteorology tool" and then using it, making their classification (Mission 2)
 4. Building their camera module for their automatons 
 		(I think we'll do retrospective upgrades to automatons, and maybe structures i.e. if you develop a module, then all the previous 'parent items' now have it. Probably more relevant/useful for automatons. And will only be the case per-anomaly(setting)). This plays part of the "expanding observatory network" storyline
@@ -72,7 +72,11 @@ We also need to block certain structures from being created on the same setting 
 2. Take a look at undeployed items: I think there’s still some work that may need to be done, however as of now all items that can be undeployed (i.e. not attached/detached from anomalies table (FK)) are accounted for as of: [SGV2-55](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-55)
 3. We should add a new base set of anomalies (planets) that are habitable, interesting, and aren't all 100% confirmed (i.e. candidates)
 4. Start setting up the character? Which would require an update to the profile form mission...
-5. Update the `classifications` table so that we can specify the anomaly type being classified 
+~~5. Update the `classifications` table so that we can specify the anomaly type being classified~~ 
+
+Breaking this down a bit further:
+1. 9, 10, 11 DONE
+2. 12 in progress (12 points to using meteorology tool, 11 is crafting/building it)
 
 Fix the component that shows completed missions: [SGV2-51](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-51)
     - Maybe we could start off with just an identifier if all missions [in a group?] are done? [SGV2-57](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-57)
