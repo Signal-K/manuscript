@@ -21,10 +21,12 @@ Now that our users have made a handful of classifications and have started to po
 So I think we should add this toolbar/ribbon as a priority. Let's make it responsive
 
 # Components to update
-* Travel format - animation, show destination & distance
+* ~~Travel format - animation, show destination & distance~~
 * Create a crafting grid/dedicated crafting component that will take the resources in the inventory and the structure to be crafted
 * See full list at [[First Mission Group - SGV2-40 Retrospective]]
 * Create unified feeds for all citizen science modules & update
+
+I think the first thing to do is to try to achieve "layout parity" between `missions/one` & `missions/two` , so that there's a level of consistency across the different mission groups.
 
 # Missions to update
 ## Mission 2
@@ -40,6 +42,9 @@ This sprint will start on the 16th of June (2024) and have the following goals (
 
 > There should be an interface design sketched out for what the long-term UI could look like (imagine a 2d Minecraft forge design). Additionally, we will also create a related ticket for a card gallery/carousel for the components - SGV2-65
 
+## Mission 4 -> Camera structure
+1. Layout needs to be updated so that the images aren't so large; i.e. are containerised
+2. Need to implement the proper narrative structure for "observation network" (maybe a view of your telescope structures across the planet/anomaly setting)
 
 
 ```
