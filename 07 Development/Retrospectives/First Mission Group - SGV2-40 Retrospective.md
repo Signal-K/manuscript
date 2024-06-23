@@ -60,16 +60,16 @@ Listed immediately below are things that I'm not sure if we need to fix to achie
 # Next steps
 ## Mission Group 2 Sprint
 The next sprint will start on the 9th of June and have the following goals:
-1. Successfully build functionality for the next 5 frontend-facing missions
-2. Funnel users back to the index route between the first and second mission groups (i.e. users have the option to go back to the "pick object to classify; classify; repeat" game flow we had in V1 last year)
+1. ~~Successfully build functionality for the next 5 frontend-facing missions~~
+2. ~~Funnel users back to the index route between the first and second mission groups (i.e. users have the option to go back to the "pick object to classify; classify; repeat" game flow we had in V1 last year)~~
 
 ### Things to fix/do from this sprint
-1. Automatons currently only pick up coal. No sectors. → [SGV2-14](https://signalk.atlassian.net/browse/SGV2-14) 
+1. ~~Automatons currently only pick up coal. No sectors. → [SGV2-14](https://signalk.atlassian.net/browse/SGV2-14) ~~
 2. Take a look at undeployed items: I think there’s still some work that may need to be done, however as of now all items that can be undeployed (i.e. not attached/detached from anomalies table (FK)) are accounted for as of: [SGV2-55](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-55)
 
-Fix the component that shows completed missions: [SGV2-51](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-51)
+~~Fix the component that shows completed missions: [SGV2-51](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-51)
     - Maybe we could start off with just an identifier if all missions [in a group?] are done? [SGV2-57](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-57)
-    -  We just need to add the foreign key for the items added to inventory from completing a mission → [SGV2-50](https://signalk.atlassian.net/browse/SGV2-50)
+    -  We just need to add the foreign key for the items added to inventory from completing a mission → [SGV2-50](https://signalk.atlassian.net/browse/SGV2-50)~~
 
 #### Things to create
 * Update the `classifications` table so that we can specify the anomaly type being classified
@@ -77,12 +77,12 @@ Fix the component that shows completed missions: [SGV2-51](https://signalk.atlas
 ## UI Cleanup Sprint
 This sprint will start on the 16th of June and have the following goals (subject to change):
 1. First two mission groups should be clear and easy for all new users to follow
-2. Update components from those mission groups to fit in more with the new Figma-voidpet design
+2. ~~Update components from those mission groups to fit in more with the new Figma-voidpet design~~
 3. Improve all other operations & services being interacted with in the current form(at)
 
 ### Things to fix/do from this sprint
-1. Scrolling issue still persistent (on index page)
-2. Improve Grid UI for index route: Grid not quite perfect on index route, but it will suffice for now: [SGV2-35](https://signalk.atlassian.net/browse/SGV2-35) 
+1. ~~Scrolling issue still persistent (on index page)~~
+2. ~~Improve Grid UI for index route: Grid not quite perfect on index route, but it will suffice for now: [SGV2-35](https://signalk.atlassian.net/browse/SGV2-35) ~~
 3. Have another go at building the Skill tree → [SGV2-45](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-45)
-4. We need to update [SGV2-46](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-46) to go from a page to an overlay/sliding panel
-5. We need to link this in with the “GoToPlanet” component and improve the size & context/behaviour of the launchpad: [SGV2-54](https://signalk.atlassian.net/browse/SGV2-54) & [SGV2-47](https://signalk.atlassian.net/browse/SGV2-47) 
+4. ~~We need to update [SGV2-46](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-46) to go from a page to an overlay/sliding panel~~
+5. ~~We need to link this in with the “GoToPlanet” component and improve the size & context/behaviour of the launchpad: [SGV2-54](https://signalk.atlassian.net/browse/SGV2-54) & [SGV2-47](https://signalk.atlassian.net/browse/SGV2-47) ~~

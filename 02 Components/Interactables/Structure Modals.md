@@ -36,5 +36,19 @@ Each structure will have a context, action system, and in/output. Let's get star
 ### Camera
 * Content: Shows the structure icon
 * Context: shown when looking through your upgrade station
-* Action: It's a passive module, having it allows the automatons to "send" photos randomly to the Camera Receiving Station, which is part of the telescope network. This then has the real action (see below). Right now the only action is using it to build the CRS
+* Action: It's a passive module, having it allows the automatons to "send" photos randomly to the Camera Receiving Station, which is part of the telescope network. This then has the real action (see below). Right now the only action is using it to build the CRS. 
+The camera will be shown as a part of the `Automaton Upgrade Station` and will not be its own structure block
+
+### Camera receiver (station)
+* Content: Shows the structure icon & provides an API with one mars rover image at a time
+* Context: Also shows any images you've collected on your active planet
+* Action: two actions, one allows you to collect a new image, and the other one allows you to classify any images you've collected
+
+### Mining station
+* Content: Shows a list of resources you currently have
+* Context: Generates around 1 resource every second, allows you to choose the resource. Can only be placed on mineral deposits
+* Action: two actions, one deploys the station (allowing it to collect resources), the other one allows you to claim the rewards
+
+### Automaton upgrade station
+* To be finished
 
