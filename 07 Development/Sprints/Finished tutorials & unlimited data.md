@@ -2,6 +2,8 @@
 connie-publish: true
 sticker: lucide//history
 connie-page-id: "28672168"
+tags:
+  - Editing
 ---
 
 Goal:

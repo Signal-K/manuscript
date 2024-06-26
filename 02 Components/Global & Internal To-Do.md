@@ -2,11 +2,13 @@
 connie-publish: true
 sticker: lucide//database
 connie-page-id: "28606513"
+tags:
+  - Editing
 ---
 
 Everything here is a task or update we need to make that hasn't been passed into a specific sprint or ticket yet. Make sure to accurately mark the relevant obsidian/confluence pages as well
 
-See more at [[Frontend timeline]]
+See more at [[Frontend timeline]] & [[Suggestions from user demos]] 
 
 # Game items
 ## Structures
@@ -20,6 +22,8 @@ See more at [[Frontend timeline]]
 * Mining station should show your inventory, and deposit information (from automatons)
 	* It should also show the context based on what missions are available (maybe the user selects something they want to do and we then provide tooltips instructing them what to do next)
 * Structure tech tree
+* I’m wondering if we should move things like the launchpad/spacecraft into automaton, structure sections or somewhere else entirely?
+	* [Jira](https://signalk.atlassian.net/browse/SGV2-90?focusedCommentId=10487)
 
 ## Crafting
 * Single row for every item type
@@ -42,6 +46,7 @@ See more at [[Frontend timeline]]
 	* [[Planets to add]]
 	* We'd also need to provide the user with a list of planets they have previously visited (i.e. "own"). 
 		* I got the idea when thinking about the order that planets would be in
+We need to give something for the users to aim for if they decide to stick with their first planet
 
 # Page layout
 ## Utilities
@@ -69,6 +74,9 @@ Maybe the utilities section could be where the tutorial/tooltips are located?
 	  [[Planets to add]]
 
 
+# To update when we introduce sectors
+* Fuel harvester structure mechanics will need to be changed so they are deployed onto a sector with a fuel deposit (or we allow users to craft fuel)
+	* The launchpad can be moved (just like with any structure) between sectors, but if the launchpad is not on a sector with a fuel deposit, it can only be fed with crafted fuel
 
 
 

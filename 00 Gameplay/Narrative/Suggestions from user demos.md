@@ -2,6 +2,8 @@
 connie-publish: true
 sticker: lucide//cloud-cog
 connie-page-id: "28606621"
+tags:
+  - Editing
 ---
 
 # Sunday, 23/06/2024

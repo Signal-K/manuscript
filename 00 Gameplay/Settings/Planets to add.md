@@ -1,6 +1,9 @@
 ---
 sticker: lucide//dog
 connie-publish: true
+connie-page-id: "29458433"
+tags:
+  - Editing
 ---
 Currently, we start off with 6 planets:
 

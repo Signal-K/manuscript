@@ -1,3 +1,9 @@
+---
+tags:
+  - Editing
+---
+
+
 # Frontend components
 What do we currently have?
 
