@@ -6,6 +6,7 @@ tags:
   - Sprint-Planning
   - Missions
   - Mechanics
+connie-page-id: "31948801"
 ---
 After you've finished your base set of missions, you'll be given the option to stay on your home planet and continue classifying things you find there, or you'll be able to go and explore other planets. You'll of course be able to return to previous planets/settings (locations) whenever you wish.
 

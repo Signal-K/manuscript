@@ -73,6 +73,8 @@ Maybe the utilities section could be where the tutorial/tooltips are located?
 * Can we link in with Zooniverse talk?
 	  [[Planets to add]]
 
+# Users/Profiles
+* Profile picture -> https://www.figma.com/design/3FmAUZtk0T9bGGTiMFbQjo/Config-Virtual-Badge-Template-2024-(Community)?node-id=0-1&t=fKjoSWf6R0duQkbR-0
 
 # To update when we introduce sectors
 * Fuel harvester structure mechanics will need to be changed so they are deployed onto a sector with a fuel deposit (or we allow users to craft fuel)
