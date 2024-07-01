@@ -24,6 +24,24 @@ What isn't working?
 3. Refresh not working well
 See [[Finished tutorials & unlimited data]] for more information
 
+The big 6:
+1. Improve classification process
+	1. [[#^040856]]
+2. Add the pokedex module
+	1. Add content to a local database
+	2. AI can help with other classifications too
+	3. Serves as a starting "engine" or backbone for the "collection"/portfolio concept
+	4. Can build an api here - make standalone, add content, etc
+3. Improve responsiveness & improve UI, implement feedback ^43038b
+	1. Next-pwa does not need to be implemented yet as I already have it, so that's the main thing!
+4. Reduce load on server with electric
+	1. Don't necessarily need to get it all working, priority is features and UI. 
+	2. The priority matrix for these backend tickets relates a lot to the number of users and the subsequent load on the server
+5. More data -> fun sandbox mechanics
+6. Give users more to do after the tutorial - implement an open-ended mechanic/loop
+	1. Also explain certain mechanics/improve context better for [[#^43038b]], e.g. mining information
+	2. Maybe it would be a good time to implement the post card (`FCDB-2`?) ticket/feature request again...
+
 ### To-Do
 1. Cross-reference this planning document with the new Jira epics
 
@@ -77,11 +95,15 @@ Key questions:
 3. This will also require the user to fill in their profile (hello, [[UserProfileFields.tsx]] [[Voidpet onbording experience]])
 
 **Improve classifying process**
-If we can give users the option to click buttons and have their classification post be "written" automatically, rather than them having to find the words themselves, it could fix the complexity issue brought up to me by some of our (very) early testers, and therefore help with user acquisition.
+If we can give users the option to click buttons and have their classification post be "written" automatically, rather than them having to find the words themselves, it could fix the complexity issue brought up to me by some of our (very) early testers, and therefore help with user acquisition. ^040856
 
 We need to improve the tutorial text/information - not just in the sidebar, but the actual classification process. 
 
+Do we update the `classifications` table to use a `configuration` field for the multiple-choice, and support the full textual component there as well?
+
 Users will be able to submit their classification either as a full-form post or with a multi-select:
+
+> Choose one or more of the above, write some comments if you'd like
 
 For lightcurves,
 1. No dips at all
