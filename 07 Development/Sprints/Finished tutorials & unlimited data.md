@@ -4,13 +4,17 @@ sticker: lucide//history
 connie-page-id: "28672168"
 tags:
   - Editing
+  - Sprints
+  - Sprint-Planning
+  - Active-Sprint
+  - Star-Sailors
 ---
 
 Goal:
-1. Finish tutorial. Now that we have no extra pages, everything needs to stay in the index route. Make the tutorial easy to follow, make sure that everything is explained to the user
+~~1. Finish tutorial. Now that we have no extra pages, everything needs to stay in the index route. Make the tutorial easy to follow, make sure that everything is explained to the user~~
 2. Give the user a helpful guide (sort of like the PvZ almanac?) about every action, item and thing to do
 3. API routes so that every current classification can be repeated
-4. Pipeline (narrative-wise) for users to go from "completing" their first planet to going to other ones, including finishing "basePlanets" collection
+~~4. Pipeline (narrative-wise) for users to go from "completing" their first planet to going to other ones, including finishing "basePlanets" collection~~
 
 Sectors will not be a part of this sprint.
 
@@ -46,6 +50,7 @@ We will include a place to look at the feed of user classifications, as well as 
 
 I'm going to update the clean minerals mechanic with a request to change the process we add items to the inventory, by creating rows and not having multiple rows where `owner` && `item` are the same. I'm thinking we do something like Crashlands where your raw resources are accessible at any time, otherwise we'll have to create rows for every setting. Either that, or maybe we add a configuration column that describes where the 5 coal in a user's inventory are split. That way we don't have to create a column for every setting...but it could be awkward to get started. Right now we won't have enough users for it to be a huge issue, so we can move this ticket. I think what I will do is look into setting up a tool so that we can administer/view this side of the db (inventory) easier. 
 
+A big sprint goal for next week will be estimating and ideating the process for more customised classifications (beyond just textual answers. i.e. questions and answers that can be saved into a custom configuration depending on the anomaly/mission)
 ## Tickets to add
 1. Get rid of extra layout complications
 2. Assign all classification/anomaly types to settings (see commit `[main 61bff5c] 🍡🪨 ↝ [GP-43]: Create some snippets and adjust components for pulling data based on active anomaly` (CPW board)

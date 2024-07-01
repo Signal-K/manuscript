@@ -3,6 +3,8 @@ connie-publish: true
 connie-page-id: "11567112"
 tags:
   - Star-Sailors
+  - Editing
+  - Active-Sprint
 sticker: lucide//router
 ---
 # List of structures
