@@ -33,3 +33,10 @@ etc
 Pokedex would be useful for #3 (clip it onto a telescope and your previous classification to compare with others users' and maybe find some new resources or whatever) and obviously would be useful for #2
 
 This is something we'll need to work on
+
+
+Right now, we need to have better control over user structures and other items, giving users more direction e.g. what comes in between our grand plan for automaton configuration and what we have now?
+
+The only new mission will involve the pokedex (coming up with a new name for it will be a mission by itself to be honest)
+
+# I want to get some feedback on the current order of missions, is it good enough?

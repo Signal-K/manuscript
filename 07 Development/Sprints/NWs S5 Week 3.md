@@ -26,7 +26,7 @@ What isn't working?
 See [[Finished tutorials & unlimited data]] for more information
 
 The big 6:
-1. Improve classification process
+~~1. Improve classification process~~
 	1. [[#^040856]]
 	2. Add classification feed -> via action button
 2. Add the pokedex module
@@ -44,14 +44,17 @@ The big 6:
 6. Give users more to do after the tutorial - implement an open-ended mechanic/loop
 	1. Also explain certain mechanics/improve context better for [[#^43038b]], e.g. mining information
 	2. Maybe it would be a good time to implement the post card (`FCDB-2`?) ticket/feature request again...
+	3. [Update]: Show the planet status (via the post card), give them more classifications to make, use the post card as the source/"guiding light"
 
 Some other things (if we have time):
 ### To-Do
 1. Cross-reference this planning document with the new Jira epics - in progress
-2. Update layout to show off-world operations
+~~2. Update layout to show off-world operations~~
 3. Implement non-terrestrial features & layout (i.e. there's no surface to land on, so how do we display structures and how is the gameplay affected?)
 4. Go back to the old v1 builds and look at the features/extra contex/nt we had for planets
 5. [SGV2-64]: [Check what was removed](https://signalk.atlassian.net/browse/SGV2-64?focusedCommentId=10518) 
+
+Structures should have dedicated orders and places on the page/planet surface
 
 # Current bugs
 1. Can't upload media to classification form
@@ -151,3 +154,35 @@ For rover photos,
 4. etc
 
 For cloud photos - tbd
+
+**A note -> not all the `anomalies/{anomalies.id}` entries in storage have all the curve images from the new api**
+
+**change scale/zoom of curve images**
+
+**limit the number of structures, replace with structure/task upgrades like on `/tests/page.tsx``
+
+
+Multiple clouds
+White colour?
+Blue colour
+Intensity - bright, faint, medium ↓
+Bright clouds
+Faint clouds
+Clouds cover most of the height
+Clouds are smaller
+
+Explain the meta/image visual light
+Explain specifically what we're aiming to measure
+
+Dried-up water channels
+Pebbles
+Medium-sized rocks
+Hills/Mountain formations
+Volcano?
+Mineral deposits
+Sandy, rocky?
+
+Show the camera & size/ref for each image
+e.g. "Zoomed", "Landscape Panoramic", scale diagram
+
+Improve tutorial for structure data into narrative
