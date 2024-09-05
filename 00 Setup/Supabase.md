@@ -6,11 +6,10 @@ tags:
   - Storage
   - Database
   - Tables
-  - Star-Sailors
 ---
 # Supabase storage buckets
 #Star-Sailors 
-[[../03 Tickets/Tickets|Tickets]]
+[[Tickets|Tickets]]
 
 List:
 1. `anomalies`
