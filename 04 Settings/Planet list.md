@@ -17,5 +17,5 @@ tags:
 # Sample planets
 These planets are used to show examples for certain modules
 
-1. Find a planet for "real alien" classifications [[../04 Gamification/Automations & Pipelines|Automations & Pipelines]]
+1. Find a planet for "real alien" classifications [[Automations & Pipelines|Automations & Pipelines]]
 2. Find a planet/station for community, Starnet, factions, etc
