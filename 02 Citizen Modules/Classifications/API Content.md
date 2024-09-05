@@ -1,0 +1,1 @@
+[Jira](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-164) (and update options to pull from a separate api route rather than being hardcoded inside the component)
