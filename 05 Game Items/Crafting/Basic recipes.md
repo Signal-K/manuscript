@@ -10,8 +10,6 @@ tags:
   - Mechanics
   - Resources
   - Structures
-  - zoodex
-  - Chapter-1
 ---
 I think we should introduce an intermediary stage between raw materials and structures, e.g. "microchips", "servos", "cameras", etc.
 
