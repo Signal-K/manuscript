@@ -1,12 +1,5 @@
 ---
 sticker: lucide//chef-hat
-tags:
-  - zoodex
-  - Chapter-1
-  - Structures
-  - Generator
-  - PostCards
-  - Tickets
 ---
 ## Structures
 1. Initialise #zoodex  structure -> give the user a choice based on the planet type (for now, they'll all get the same one to simplify things)
@@ -22,10 +15,10 @@ tags:
 Move all of these into #Tickets 
 
 ## Tickets (for people)
-[[../../03 Tickets/03 Tickets|03 Tickets]]
+[[03 Tickets|03 Tickets]]
 1. Send over architecture overview, initial roadmap plan, team info and goals for Dylan
 2. Send over meeting notes to Fred, including deliverables & requests
 3. Pick dinner venue for Saturday night
 
 ### Related
-1. [[../Design Reviews/05 September 2024|05 September 2024]]
+1. [[06 Meetings/Design Reviews/05 September 2024|05 September 2024]]
