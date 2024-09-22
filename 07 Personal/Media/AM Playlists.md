@@ -1,6 +1,6 @@
 ---
 sticker: lucide//fast-forward
-connie-publish: 
+connie-publish:
 ---
 
 # Playlists

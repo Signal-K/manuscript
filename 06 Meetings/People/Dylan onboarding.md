@@ -11,13 +11,13 @@ Right now, a lot of our notes are on Github, and it's quite a mess. I'm going to
 
 ## Here's some things you should look into:
 Look through the following pages to get an understanding of the current narrative for #Star-Sailors  and where we're at from an operational standpoint (search the repository on github for these, I don't know how to manually link all of them rn):
-1. "Timeline" [[Timeline|Timeline]]
-2. "Tickets" [[Tickets|Tickets]]
-3. "01 Chapter 1" [[01 Chapter 1|01 Chapter 1]]
-	1. "Mining Operations" [[Mining Operations|Mining Operations]]
-4. all files inside "Sprints" folder (03/Sprints) [[Sprints|Sprints]] & "Epics" [[Epics|Epics]]
-5. "Mission list" [[Mission list|Mission list]]
-6. "Automations & Pipelines" [[Automations & Pipelines|Automations & Pipelines]]
+1. "Timeline" [[Timeline]]
+2. "Tickets" [[Tickets]]
+3. "01 Chapter 1" [[01 Chapter 1]]
+	1. "Mining Operations" [[Mining Operations]]
+4. all files inside "Sprints" folder (03/Sprints) [[Sprints]] & "Epics" [[Epics]]
+5. "Mission list" [[Mission list]]
+6. "Automations & Pipelines" [[Automations & Pipelines]]
 7. "Structure list"
 8. "Basic recipes"
 9. "03 September 2024" & "05 September 2024"

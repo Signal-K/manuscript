@@ -8,10 +8,10 @@ sticker: emoji//1f468-200d-1f3a4
 (in no specific order)
 
 ~~1. Improve classification process~~
-	1. [[#^040856|]]
+	1. [[#^040856]]
 ~~2. Add the pokedex module~~
 	1. Add content to a local database
-	2. AI can help with other classifications too - see [[PostCards (CPW-2)|PostCards (CPW-2)]]
+	2. AI can help with other classifications too - see [[PostCards (CPW-2)]]
 	3. Serves as a starting "engine" or backbone for the "collection"/portfolio concept
 	4. Can build an api here - make standalone, add content, etc
 ~~3. Improve responsiveness & improve UI, implement feedback ^43038b~~
@@ -21,7 +21,7 @@ sticker: emoji//1f468-200d-1f3a4
 	2. The priority matrix for these backend tickets relates a lot to the number of users and the subsequent load on the server
 ~~5. More data -> fun sandbox mechanics~~
 6. Give users more to do after the tutorial - implement an open-ended mechanic/loop
-	1. Also explain certain mechanics/improve context better for [[#^43038b|]], e.g. mining information
+	1. Also explain certain mechanics/improve context better for [[#^43038b]], e.g. mining information
 	2. Maybe it would be a good time to implement the post card (`FCDB-2`?) ticket/feature request again...
 
 **8 July 2024**
@@ -54,7 +54,7 @@ Commit notes:
 
 **4 July 2024**
 *Star Sailors*:
-~~1. How do we use the surveyor [[Structures|Structures]] in the immediate future?~~
+~~1. How do we use the surveyor [[Structures]] in the immediate future?~~
 2. Maybe produce some non-citizen science structures for them to build?
 3. Revisit the Automaton Upgrade structure so that users can add things to their rovers...maybe even a little 3d scene (or start planning one out?)
 ~~4. Fix responsiveness issues~~
@@ -73,14 +73,14 @@ Commit notes:
 ~~2. Start pokedex module~~
 3. Classification process -> provide full documentation & plan/examples for all citizen science modules
 4. Plan out new module for this week, if it's the pokedex, how do we integrate it into the workflow
-	1. I think we will do the Pokedex, because it's relatively straightforward, has multiple usecases (see [[PostCards (CPW-2)|PostCards (CPW-2)]]) and I can probably sneak $50 USD worth of openai credits into my next invoice for Copernic
+	1. I think we will do the Pokedex, because it's relatively straightforward, has multiple usecases (see [[PostCards (CPW-2)]]) and I can probably sneak $50 USD worth of openai credits into my next invoice for Copernic
 	2. We might need to accept location data - maybe just a manual seeding inside `classifications.configuration`?
 ~~5. Figure out update to existing missions and any new missions~~
 	1. Improve on [[Missions - List|Missions - List]] OOO planning
 6. Initialise electric project
 ~~7. Fix complaints/feedback (mainly from "negative" Dave)~~
 ~~8. Start thinking about "fun sandbox mechanics"~~
-9. Make an actionable start on [[PostCards (CPW-2)|PostCards (CPW-2)]] and document
+9. Make an actionable start on [[PostCards (CPW-2)]] and document
 
 **1 July 2024**
 *Star Sailors*:
@@ -160,7 +160,7 @@ Commit notes:
 *Star Sailors*:
 ~~1. Feedback, maybe some meetings~~
 2. Come up with a better order of operations for the automaton upgrade interface
-~~3. Write some text for each mission/stage [[Voidpet onbording experience|Voidpet onbording experience]], restructure the missions so maybe there's multiple actions~~
+~~3. Write some text for each mission/stage [[Voidpet onbording experience]], restructure the missions so maybe there's multiple actions~~
 ~~4. Create v0.dev designs for the missions,~~ modals, buttons, first draw the designs in the notebook. 
 5. Finish spaceship & launchpad blocks, update modals to include rate limiter/discriminator when attempting to engage transport
 ~~6. Get working API for the lightkurve generator~~
@@ -233,7 +233,7 @@ Commit notes:
 **14th June 2024**:
 *Star Sailors*:
 ~~1. Finish surveyor module~~
-~~2. Insert all missionData[[|]]~~
+~~2. Insert all missionData[[]]~~
 3. Cleanup
 ~~4. Fix foreign key mission
 5. Mission completion component
@@ -278,8 +278,8 @@ Rewards:
 
 
 Manuscript finder dirs:
-![[Pasted image 20240611090955.png|Pasted image 20240611090955.png]]
-![[Pasted image 20240611091008.png|Pasted image 20240611091008.png]]
+![[Pasted image 20240611090955.png]]
+![[Pasted image 20240611091008.png]]
 
 9th June 2024:
 

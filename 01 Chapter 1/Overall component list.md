@@ -4,7 +4,7 @@ tags:
   - Components
   - Chapter-1
 ---
-[[Planet list - Anomalies|Planet list - Anomalies]] 
+[[Planet list - Anomalies]] 
 
 # Gameplay mechanics
 * Mining

@@ -9,9 +9,9 @@ tags:
   - Active-Sprint
 ---
 # Ticket list
-[[Tickets|Tickets]]
+[[Tickets]]
 ## SGV2-121 (Post cards)
-[[Planet Generator|Planet Generator]]
+[[Planet Generator]]
 What I think we’ll do for the post card is we’ll have the planet avatar (we’ll need to increase the resolution for this), which you can then flip around to see a view of the landscape (we’ll have a basic landscape image we’ll apply a [colour] filter over to adjust how it looks for different planet types.
 
 Show basic properties, discovery list, structures & other entities
@@ -22,5 +22,5 @@ Customisation scope →
 
 We’ll also add a post card for other anomaly types with similar customisation formats.
 Assets:
-![[Pasted image 20240903002452.png|Pasted image 20240903002452.png]]
-![[Pasted image 20240903002443.png|Pasted image 20240903002443.png]]
+![[Pasted image 20240903002452.png]]
+![[Pasted image 20240903002443.png]]

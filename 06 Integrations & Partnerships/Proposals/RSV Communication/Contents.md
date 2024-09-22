@@ -14,4 +14,4 @@ The goal of this partnership/collaboration is to acquire sets of data for #Star-
 
 All emails & communication will be logged here if it's related to planning/drafts
 
-See also [[RSV x Star Sailors|RSV x Star Sailors]] [[RSV Communication|RSV Communication]]
+See also [[RSV x Star Sailors]] [[RSV Communication]]

@@ -9,7 +9,7 @@ tags:
 ---
 # Supabase storage buckets
 #Star-Sailors 
-[[Tickets|Tickets]]
+[[Tickets]]
 
 List:
 1. `anomalies`

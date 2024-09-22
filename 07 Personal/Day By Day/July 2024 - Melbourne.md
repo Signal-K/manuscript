@@ -17,7 +17,7 @@ Nordkurve:
 	1. Dynamic background for planets
 	2. New planet areas, narrative and simplified navigation
 	3. Show, deploy, share, get feedback
-3. Anything else is a bonus, go over [[Planet list - Anomalies|Planet list - Anomalies]] again and get some feedback for the new base set.
+3. Anything else is a bonus, go over [[Planet list - Anomalies]] again and get some feedback for the new base set.
 4. Where do we show the planet card in the current user flow? Just have it as a progression button/panel along the bottom for now?
 	1. Show users a progression bar, explain to them in today's push about the upcoming changes and also the shareable card, get the new avatars in.
 	2. Go over `user_anomalies` table again
@@ -47,12 +47,12 @@ Then we can implement set 2, and then the community events, which is probably (i
 2. Plan out requirements for #SERA #Summer
 3. Build contract for #SERA #Summer 
 4. Frontend components for #SERA #Summer 
-5. Close 5 branches (log) for [[Linear projects|Linear projects]] ( #Star-Sailors )
-6. Create Jira tickets and set up new components in [[Onboarding|Onboarding]] ( #Star-Sailors )
+5. Close 5 branches (log) for [[Linear projects]] ( #Star-Sailors )
+6. Create Jira tickets and set up new components in [[Onboarding]] ( #Star-Sailors )
 	1. Let's also review what chatgpt came up with, compare with what we have and what needs to be added (e.g. is there something missing from the tickets/components?)
 7. Write down some notes in #Obsidian, identify the current open pages #Editing and look at a template for new projects #Personal 
 8. Two components for #Copernic 
-9. Go through this page [[July 2024 - Melbourne|July 2024 - Melbourne]] ( #Star-Sailors )
+9. Go through this page [[July 2024 - Melbourne]] ( #Star-Sailors )
 10. Unarchive tabs & note down from Arc #Personal
 11. Move around 20 tickets in TickTick #Personal #Star-Sailors 
 12. Determine requirements (and potential changes) for #zoodex ( #Star-Sailors )

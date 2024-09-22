@@ -9,7 +9,7 @@ tags:
 sticker: lucide//plug
 ---
 # Construction
-Building on from [[Mining Operations|Mining Operations]], construction & refining (read: changing the behaviour/makeup of mined resources) is the next step in the user's journey in [[01 Chapter 1|01 Chapter 1]], as they'll need some resources to build up their structures and find some data points.
+Building on from [[Mining Operations]], construction & refining (read: changing the behaviour/makeup of mined resources) is the next step in the user's journey in [[01 Chapter 1]], as they'll need some resources to build up their structures and find some data points.
 
 ## Refining & manufacturing
 Steps:
@@ -21,7 +21,7 @@ Users will be able to choose the items that are coming out of each silo, what is
 # Gardens & Citizen modules
 Essentially these are "plant, wait, reward" plot points - perform one or multiple actions, wait for a period of time or for an event, get a reward/next step
 
-Related: [[Marketplace & Exclusives|Marketplace & Exclusives]]
+Related: [[Marketplace & Exclusives]]
 
 This also links into terraforming. Essentially, users will have the community events and classifications from their mission log in here.
 
@@ -42,5 +42,5 @@ Early-game, we'll have a "colonised/explored" planet that users can go to try ou
 
 
 Related:
-1. [[Citizen - Creative|Citizen - Creative]]
+1. [[Citizen - Creative]]
 2. [[02 Citizen Modules/Classifications/Classifications|Classifications]]

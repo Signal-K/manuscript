@@ -2,7 +2,7 @@
 sticker: lucide//mail
 ---
 # Scenes
-Just to make it clear and simplify things a bit, I'd recommend taking a look at the [[Timeline|Timeline]], but the basic routes for #Chapter-1  are listed below:
+Just to make it clear and simplify things a bit, I'd recommend taking a look at the [[Timeline]], but the basic routes for #Chapter-1  are listed below:
 1. Introduction to structures, "energy" management
 2. Mining
 3. Refining

@@ -26,7 +26,7 @@ Rovers/automatons can be used to mine through the deposits, their efficiency and
 1. Rover capacity
 2. Rover mining speed
 3. Rover modules
-	[[Automaton - Rover configuration|Automaton - Rover configuration]]
+	[[Automaton - Rover configuration]]
 Some modules that are available to a rover would allow it to build, dig, test, and some modules allow it to mine stronger/rarer materials (e.g. a "diamond cutter")
 #### Mining stations
 1. These mining stations will produce resources over time, allowing rovers to be used for other things
@@ -42,7 +42,7 @@ Some modules that are available to a rover would allow it to build, dig, test, a
 ### Integration with rover photos
 1. Based on the options the user gives, this creates a multiplier that determines the deposits (similar to a draft lottery system). E.g. dried up lakes will likely have silicates **How to prevent abuse**
 
-Having said all that, it would also be a good idea to initially populate the user's early-game deposits with some resources that will give them a slight head-start in the early construction (see [[Timeline|Timeline]], [[Basic recipes|Basic recipes]])
+Having said all that, it would also be a good idea to initially populate the user's early-game deposits with some resources that will give them a slight head-start in the early construction (see [[Timeline]], [[Basic recipes]])
 
 # What will be in Chapter 1?
 1. ~~Automatons will be used for mining~~
@@ -68,11 +68,11 @@ Static components (e.g. deposit list [grid], inventory) on the left, interactabl
 * https://signalk.atlassian.net/browse/SGV2-162?focusedCommentId=10662 - Fix this context by updating rovers' activePlanet when mining begins, link them to an automaton structure as well
 
 # Questions
-See [[01 Chapter 1|01 Chapter 1]]
+See [[01 Chapter 1]]
 
 # Other people tickets
 1. `MineralDeposit` & `MineralDeposits` component - get Rhys to help organise into squares
-2. Background images for planet sections - [[Tickets|Tickets]]
+2. Background images for planet sections - #Tickets 
 3. Discuss (p19) guidebook and terrarium, "complex" design (and overall page route, what is being shown where)
 
 # Move to own section

@@ -36,7 +36,7 @@ Structures - clicking on one structure prevents being able to open others
 * Can't open the same structure after closing it
 
 ### Structures
-[[Tickets|Tickets]] ->
+[[Tickets]] ->
 1. ~~Upgrade automaton doesn't work if there's multiple automatons~~
 2. Expanded don't scroll
 3. Seems that they aren't being split again (we're re-using the `StructuresOnPlanet` component)

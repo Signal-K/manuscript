@@ -13,7 +13,7 @@ tags:
 ---
 I think we should introduce an intermediary stage between raw materials and structures, e.g. "microchips", "servos", "cameras", etc.
 
-During the initial/early stages of gameplay (e.g. [[01 Chapter 1|01 Chapter 1]] [[Structure list|Structure list]]), the first things available [to craft] will be the initial structures, which will include:
+During the initial/early stages of gameplay (e.g. [[01 Chapter 1]] [[Structure list]]), the first things available [to craft] will be the initial structures, which will include:
 1. Telescope
 2. "Animal lure" / camera loop (this is likely something we'll have to ask some questions about - the #zoodex is a moveable component in-game, so is the structure just something that lures the animals/life in? Do we have multiple structures that are linked and provide some boost utility? - anywhosal, for now I'll just go with "animal module")
 3. LIDAR station (ground-based) with weather balloons and orbiting [monitoring] satellites (boosts, I don't think all of them would be required) for collecting cloud (and other weather data)
@@ -33,7 +33,7 @@ We'll also need a power source for structures, so maybe some solar panels?
 9. Engine, fuel store/tank
 10. Servo
 
-Here's a list of the current minerals (from [[Automaton - Rover configuration|Automaton - Rover configuration]]):
+Here's a list of the current minerals (from [[Automaton - Rover configuration]]):
 1. Silicon 
 2. Iron 
 3. Nickel 

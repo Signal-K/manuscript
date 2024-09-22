@@ -37,7 +37,7 @@ What do satellites do? How do we avoid duplicating functionality? (just have a r
 Potentially we'll direct all rover findings & administration, customisation to the Automaton Structure (resurrecting from the dead!)
 
 # Related
-[[Sprint notes|Sprint notes]]
+[[Sprint notes]]
 
 # Notes
-Was originally at [[Narrative|Narrative]]
+Was originally at [[Narrative]]

@@ -1,6 +1,6 @@
 ---
 sticker: lucide//chef-hat
-connie-publish: 
+connie-publish:
 ---
 **8/7/24**
 1. Star Sailors -> come up with full list of structures, order of operations, and design/layout (maybe some new missions are required)

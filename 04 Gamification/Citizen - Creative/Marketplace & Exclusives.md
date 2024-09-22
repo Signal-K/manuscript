@@ -14,4 +14,4 @@ rest of the [thin] notebook
 Outpost -> Language zooniverse projects
 
 Notes:
-[[API Content|API Content]]
+[[API Content]]
