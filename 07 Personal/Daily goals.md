@@ -54,7 +54,7 @@ Commit notes:
 
 **4 July 2024**
 *Star Sailors*:
-~~1. How do we use the surveyor [[Structures]] in the immediate future?~~
+~~1. How do we use the surveyor [[00 Archive/Test/Structures]] in the immediate future?~~
 2. Maybe produce some non-citizen science structures for them to build?
 3. Revisit the Automaton Upgrade structure so that users can add things to their rovers...maybe even a little 3d scene (or start planning one out?)
 ~~4. Fix responsiveness issues~~

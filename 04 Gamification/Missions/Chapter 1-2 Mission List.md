@@ -100,7 +100,8 @@ Idea - we move to "colonise" other Earth-based planets as the intro scenes (so t
 6. Should there be a focus on introducing satellite (orbital/atmosphere) structures, launching scene, or is the introductory chapter just dedicated to surface-based structures?
 7. For mission sequencing, can we update the value to be an array rather than an int?
 
-I'm concerned that we've got too many missions or steps (especially with compulsory classifications/upgrading to classify starter objects). Please eliminate 3. I am not a crackpot
+~~I'm concerned that we've got too many missions or steps (especially with compulsory classifications/upgrading to classify starter objects). Please eliminate 3. I am not a crackpot~~
+1. Now that we've got a new #Research flow, we don't think this is going to be an issue
 
 Maybe we come up with a customised action/classification plan based on what the user wants to do (e.g. instead of asking them which mission they'd like to do, ask them what they want to find, then create a mission sequence and tutorial structure around that. Just got to figure out the compulsory nature of each classification type; at minimum finding new transit events will be compulsory at least once.)
 
@@ -109,4 +110,4 @@ I think #APPEEARs should be used to generate content, for both #Earth and other 
 
 Scope for automatic #Surveyor generations based on user discoveries e.g. #Asteroid finder in #Telescope 
 
-For now; until further notice; the intro to each starter #Modules will be compulsory
+~~For now; until further notice; the intro to each starter #Modules will be compulsory~~

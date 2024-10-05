@@ -28,22 +28,19 @@ See [[01 Chapter 1]]
 8. ~~After the classification is posted for the Rover Photos mission, THEN show the mineral deposits (and perhaps some explanation for this phase), hide the classification/post form~~
 > (Note) -> I think all of these should just be created as a single child issue of `SGV2-164`
 
-# Chapter 1 [[Overall component list]]
-## [[Mining Operations]]
+### #Mining operations
 1. ~~Inventory module~~
 2. "Offer" to send users directly to the refinery/somewhere else after mining finishes, also allow them to select (in state) a "goal" and have a "semi-automated" pathway built from that
 
 ## Mechanics
 **[SGV2-161: Crafting pipeline for items](https://signalk.atlassian.net/browse/SGV2-161)**
-1. ~~Each item has a crafting recipe [[Crafting]] [[Basic recipes]]~~
 2. We’ll create a modal that shows the items you have in your inventory (Inventory modal, see linked/attached image), has 2 slots for you to select 2 items, and then create an output. ^d3cf10
 3. Have a maximum number of deposits on each planet
 4. ~~Integrate creation of deposits with rover photo creation~~
-5. Create rover action panel (see [[Mining Operations]]) - partially completed
 
 ## Visuals
 **[New planet view](https://signalk.atlassian.net/browse/SGV2-158)**
-1. ~~Find appropriate background images - ticket for Fred~~ [[Mining Operations]]
+
 2. Fix image loading times - APPEEARS API
 	1. Or at least, add a loading icon/spinner
 
@@ -55,23 +52,19 @@ See [[01 Chapter 1]]
 
 ## Content/Missions
 1. [[Galaxy map]] -> maybe a dynamic list that fans out based on the direction and magnitude of distance? User can filter by "have visited", etc
-2. Get the animal/zoodex classification to pull in classification options based on mission, integrate creation of posts mentioning the storage key [[02 Citizen Modules]] [[02 Citizen Modules/Data Sources/Data Sources]]  #zoodex 
+2. Get the animal/zoodex classification to pull in classification options based on mission, integrate creation of posts mentioning the storage key   #zoodex 
 3. Animals can discover things, be carried on roovers - powerups (cocoa beans citizen science idea?)
 
 ## Classifications/anomalies
 #Anomalies 
-[[02 Citizen Modules/Classifications/Classifications|Classifications]]
+#Classifications 
 1. [Posts about an anomaly](https://www.zooniverse.org/projects/andreavarela89/iguanas-from-above/talk/3389/3429906) 
 2. Multiple classification / `PostFormMultiple.tsx`
 
 # Generator/Visuals
-[[02 Globals/Bug Report]]
+#Bugs 
 1. Increase pixel count for the "low-res" exports
 
-# Chapter 2
-
-# Structure tickets
-[[05 Game Items/Structures/Structures|Structures]]
 
 # Creativity/Garden mechanics
 ## Rewards, Content, Items

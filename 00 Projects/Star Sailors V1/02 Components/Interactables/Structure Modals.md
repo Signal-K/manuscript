@@ -4,7 +4,7 @@ sticker: lucide//ghost
 connie-page-id: "28639294"
 ---
 
-See [[Structures]] for more info
+See [[00 Archive/Test/Structures]] for more info
 
 Each structure will have a context, action system, and in/output. Let's get started
 

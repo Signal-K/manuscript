@@ -9,6 +9,6 @@ Same convention as [[Global & Internal To-Do]]
 
 1. Create a visual tilemap based on the user's structures and setup on their planet
 
-Now that we've got the [[Structure Modals]] [[Structures]] design set up, I do want to mention that eventually I want it to look more in-line with a traditional dashboard/control panel as opposed to the current vertical column with buttons interface, but we're a ways away from that at the moment
+Now that we've got the [[Structure Modals]] [[00 Archive/Test/Structures]] design set up, I do want to mention that eventually I want it to look more in-line with a traditional dashboard/control panel as opposed to the current vertical column with buttons interface, but we're a ways away from that at the moment
 
 https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-53

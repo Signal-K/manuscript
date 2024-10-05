@@ -14,7 +14,7 @@ banner: Pasted image 20240826204019.png
 
 # To determine
 1. All classification points for #Chapter-2 
-	1. We must have something to extend each existing structure
+	1. ~~We must have something to extend each existing structure~~
 	2. Pokedex uploader for #zoodex 
 	3. Introduce an entirely new discipline
 	4. At least 2 more animal projects for #zoodex 

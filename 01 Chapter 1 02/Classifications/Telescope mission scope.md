@@ -15,3 +15,5 @@ tags:
 ## Motivation & relevance
 Modules like #sunspot investigations can be used to predict the habitability, terrain & long-term planetary evolution of a planet. Another potential [[Starter flask routes]]
 I would like to also have a think about "launching" telescopes and orbitals that link in with the surface-based structure
+
+Could habitability be something else we use the telescope to look at the current planet (maybe to get an "outsiders" perspective) when the planet "has life"?

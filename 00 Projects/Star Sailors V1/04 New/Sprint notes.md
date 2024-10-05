@@ -84,7 +84,7 @@ So I think I can go back to the mining ticket [for] now...
 
 REVIEW:
 1. [[Currently editing]]
-2. [[Structures]]
+2. [[00 Archive/Test/Structures]]
 
 # Component-based
 ## Navigation & controllers

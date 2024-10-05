@@ -5,7 +5,7 @@ tags:
   - Mechanics
   - Data-Sources
 ---
-User picks what they'd like to do (module-wise), they are then given a structure that has enough "strength" for **1 classification** (tutorial). User is then asked if they want to continue (they'll have to collect some resources and build their base) or if they'd like to pick another focus
+User picks what they'd like to do (module-wise), thxey are then given a structure that has enough "strength" for **1 classification** (tutorial). User is then asked if they want to continue (they'll have to collect some resources and build their base) or if they'd like to pick another focus
 
 This then starts filling out the mission log
 

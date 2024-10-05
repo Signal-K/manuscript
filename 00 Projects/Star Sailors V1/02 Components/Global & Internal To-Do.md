@@ -13,11 +13,11 @@ See more at [[Frontend timeline]] & [[Suggestions from user demos]]
 # Game items
 ## Structures
 * Don't show all structures in the overlay area on index route
-	* [[Structure Modals]] & [[Structures]]
+	* [[Structure Modals]] & [[00 Archive/Test/Structures]]
 	* [Jira](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-86)
 		We need to determine the setup of structures, e.g. does the camera receiver station pair up with the telescopes or with the automaton upgrade station? Is the MT part of the [telescope] array or something else?
 * Prevent duplicate structure creation
-	* [[Structures]]
+	* [[00 Archive/Test/Structures]]
 	* [Jira](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-84) 
 * Mining station should show your inventory, and deposit information (from automatons)
 	* It should also show the context based on what missions are available (maybe the user selects something they want to do and we then provide tooltips instructing them what to do next)

@@ -13,3 +13,5 @@ The initial flow after #Earth #Chapter-1 / #Onboarding should be customised base
 Potentially we come up with an expanded tree of missions/skills (related to #Research ) that the user can choose from ( #pathways ) e.g. if the user wants to become a #Navigator they can focus on exploratory #Modules with each [successful] #Classifications contributing to their skill count. The question with this strategy is how we allow users to mix and match, as well as the infrastructure behind it if we have missions, research, skills and upgrades...is this too complex (both from a user experience & developer experience perspective)?
 
 It does provide another usecase for #ClassificationPoints, though...
+
+Update - we won't introduce a strict playstyle yet (I don't think), we'll just direct users to planets or bodies that also show the most relevant module, and then users can determine what they'd like to 

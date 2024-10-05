@@ -7,7 +7,7 @@ tags:
 1. Combine [[Research topics for Chapter 1]]&& [[Chapter 1 Research scope]] 
 2. ~~Implement test/couple words of dialogue for each mission~~, test out Rhys' fix
 3. ~~Report on~~ [[What's left]]
-4. ~~[[Tickets to revisit]] && #Tickets priority, figure out lead into #Chapter-2 & scope for novelty components~~
+4. ~~[[01 Chapter 2/Tickets to revisit]] && #Tickets priority, figure out lead into #Chapter-2 & scope for novelty components~~
 ~~5. Fix [[02 Chapter 2]]&& [[01 Chapter 2]]~~
 6. ~~Plan scope & initial story treatment for #Chapter-2 ,~~ set up sprint board, infrastructure plan and strict novelty pipeline including postcards
 7. > ~~Now update it so that clicking "unlock" on a STRUCTURE creates an entry in `inventory` table (as well as in `unlocked_technology`) where `anomaly` = `activePlanet.id`, `owner` = `session.user.id` and `item` = `structure.id`~~

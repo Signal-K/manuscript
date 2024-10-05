@@ -20,3 +20,6 @@ I'm taking a look at citizen science projects that have accessible data sets lik
 1. https://github.com/pyinat/pyinaturalist
 
 If we can't get enough material to automatically populate our infrastructure, we might need to reach out directly to the project maintainers or web-scrape. We need to determine what modules to include as the minimum.
+Could we make up our own project based on data?
+
+Tutorials will follow the derived project, until we start adding our own custom projects.

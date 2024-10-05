@@ -10,7 +10,7 @@ tags:
   - Automations
 ---
 ## Roovers/Generating
-1. [SGV2-191](https://signalk.atlassian.net/jira/software/projects/SGV2/boards/8?selectedIssue=SGV2-191) -> api route for generating mineral deposits from user classifications, terrain generation (noise maps)? [[Terrain generation]][[Planet Generator]][[Automaton - Rover configuration]]
+
 2. `SGV2-186`: [[Planet Generator]]should be based on number of classification types, not number of classifications
 	1. Additionally, landscape images with depth/maps should be generated
 
@@ -39,9 +39,9 @@ tags:
 1. `SGV2-9`
 
 ## Structures
-1. [SGV2-192](https://signalk.atlassian.net/browse/SGV2-192) 
-2. Generating -> [SGV2-196] & derivatives
+~~1. [SGV2-192](https://signalk.atlassian.net/browse/SGV2-192)~~ 
+~~2. Generating -> [SGV2-196] & derivatives~~
 
 ## Missions
-1. [SGV2-197](https://signalk.atlassian.net/browse/SGV2-197) -> Maybe users should be able to change their starter classification mission [[Mission list]]
-	1. Component: `ChooseClassificationStarter`
+~~1. [SGV2-197](https://signalk.atlassian.net/browse/SGV2-197) -> Maybe users should be able to change their starter classification mission [[Mission list]]
+	1. Component: `ChooseClassificationStarter`~~
