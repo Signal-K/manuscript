@@ -40,6 +40,8 @@ After doing this, users will find the #Starnet option (maybe we need to build an
 
 Then, users go through resource collection, sharing their discoveries and viewing theirs' and others', commenting & adding votes, and then they can find their own exoplanet (again, #sectors ).
 
+See [[Quick notes]] for Starnet
+
 ### Starnet
 Will be a similar modal-layout to #Structures , will also house documentation. Users will be able to view the #marketplace here as well, but it won't be accessible until later in-game.
 

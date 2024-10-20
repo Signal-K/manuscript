@@ -10,6 +10,12 @@ tags:
 Finish Mission Narrative, once-over of all open notes, get terrarium, update mission list with tutorial classification being the primary first
 
 Locations will be based off of [[In-Game Locations]]
+Minimal plan:
+1. Ingress from #Chapter-1 
+2. User flies to a new planet after choosing what mission they'd like to do
+3. They then make some discoveries, maybe participate in a community mission, before discovering their own planet
+4. They'll then need to collect some fuel so they can visit their planet (and we'll then update this later to include things like warp drives)
+
 Users will choose what they'd like to do, and they fly in their spaceship to the new planet/space body and can begin setting up some structures and automatons. I want base building to become a feature/plotpoint in this chapter, and we can then implement terraforming in #Chapter-3 . Each chapter will be relatively "open-world" in that you can fly around to any location you've unlocked; for example if you start out #Chapter-2 on Jupiter>Io to classify volcanoes, and then decide you want to go back to #Earth to classify more animals, you can do that. 
 
 We'll also be adding more content to previous locations/chapters as we go in each chapter.
