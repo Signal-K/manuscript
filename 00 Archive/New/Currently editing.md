@@ -8,7 +8,7 @@ sticker: lucide//circle-equal
 [[Planet list - Anomalies]]
 [[July 2024]]
 [[Onboarding]]
-[[Structures]]
+[[00 Archive/Test/Structures]]
 [[Obsidian open]]
 
 Tickets for onboarding:

@@ -13,6 +13,18 @@ tags:
 ---
 # Zoodex
 ## Animals
+### Penguin Watch
+![[Pasted image 20241006114151.png]]
+Individually mark rockhopper penguin adults, chicks and eggs in the foreground of the image by clicking at the centre of each one's visible area.  
+Click and drag the marks to recentre them as needed.
+
+![[Pasted image 20241006114213.png]]
+Too small to count? Ignore any penguin too far in the background like in the yellow circle above.
+
+![[Pasted image 20241006114228.png]]
+If it is too difficult to see any animal on the image, simply select '_This image is too dark or blurry_'.
+
+Let's go!
 ### Wildwatch Burrowing Owl
 ![[Pasted image 20240927161211.png]]
 > In this project, you will be reviewing a series of photos from motion-activated field cameras directed at burrowing owl nest entrances located in San Diego County. By identifying the owls and their approximate ages (juvenile or adult), behaviors, and other animal “visitors”, you will help researchers get a clearer picture of what burrowing owls are really up to.
@@ -110,7 +122,44 @@ Later -
 > Some observers put a range for the number of young, especially when they could not see the nest contents clearly. Please err on the conservative side and include the lowest of the number range.
 > For cards that have a range of dates for one or multiple lines of data such as the one pictured, please use the **LATEST DATE** for that line.
 
+# LIDAR
+## Jovian Vortex Hunter
+A note - this project is sort of related to #Telescope , however I'm marking it as a LIDAR project to drive the #Meteorologists towards it. In #Star-Sailors , the data will "come from" your satellite
 
+![[Pasted image 20241027170333.png]]
+Welcome! In this workflow, you will be identifying the type of atmosphere feature visible in satellite images of gas giants in your network. The images you will see are cropped from your automated satellite data, and correspond to an area of ~7000x7000km on nearby gaseous planets.
+
+![[Pasted image 20241027170346.png]]
+There are four main categories that we are interested in. The first three (vortex, turbulent region and cloud bands) are discrete atmospheric features. The last option is for when the image either shows no large scale structure, or if it is unclear.
+
+![[Pasted image 20241027170355.png]]
+A vortex is an atmospheric feature that is generally round/elliptical in shape. On Earth, an example is a hurricane/cyclone/typhoon. On gaseous planets, there are examples of both cyclones and anti-cyclones (spin in the opposite direction of cyclones), and they appear in a variety of sizes and colours. If you see any feature that has a compact oval shape, select this option.
+
+![[Pasted image 20241027170525.png]]
+Turbulent features are ubiquitous on gas giants. These are cloud structures that don't have a definite shape, but form lots of curls and swirls. Sometimes these structures swirl inwards and appear to form vortices, as shown below. These images should be labelled with the vortices option and the turbulent region option.
+
+![[Pasted image 20241027170532.png]]
+Sometimes, there are gradients in color that are mostly horizontal in direction. These are the separation between different cloud bands (usually near the equator). 
+
+![[Pasted image 20241027170710.png]]
+Sometimes, there might be no features of interest in the image. In this case, select the no visible structure option.
+
+![[Pasted image 20241027170759.png]]
+Don't forget that you can select multiple options. Now, let's get started!
+## Plankton Portal
+![[Pasted image 20241006164952.png]]
+> In this project, you'll be marking images of plankton—tiny oceanic organisms—taken by an underwater imaging system. Because plankton are an important food source and a strong indicator of the health of a marine biome, they can teach us many things about our planet's oceans.
+
+![[Pasted image 20241006165011.png]]
+> You'll be given a series of images to collect
+
+![[Pasted image 20241006170103.png]]
+> Don't worry too much if you aren't 100% sure—we just want your best guess, no matter what! Many people will see each image, and everyone's classifications will be combined to produce a result. The wisdom of crowds tends to give the right answer.
+
+
+![[Pasted image 20241006170122.png]]
+
+> Let's get started!
 # Telescope
 ## Radio telescopes
 ### SETI - Are we alone?
@@ -201,3 +250,45 @@ Its measurements point to water-ice clouds and carbon-dioxide clouds at very hig
 
 ![[Pasted image 20240927171519.png]]
 > You're ready to begin cloudspotting on Mars!
+
+
+# Satellite/Telescope
+## Planet four
+![[Pasted image 20241013140404.png]]
+> You will be reviewing cutouts from images taken by your HiRISE camera aboard Mars Reconnaissance Orbiter.
+
+![[Pasted image 20241013140422.png]]
+> In the Springtime on Mars' South polar regions, carbon dioxide jets loft dust and dirt up to the surface. If the wind is blowing, dark streaks or 'fans' are created. If not, ellipse-shaped 'blotches' form.
+
+![[Pasted image 20241013140451.png]]
+> We need your help to identify and mark these dark deposits in images of the Martian surface. Some will be in neat fans, other will be in blotches. The numbers, shapes, sizes, and directions of these deposits tell us about the surface winds and the seasonal processes occurring on the south pole of Mars.
+
+![[Pasted image 20241013140511.png]]
+> Hold down your mouse at the source where the fan originates, then drag to the area where the streak begins to fade away and release your mouse. You can use the toggles to adjust the final shape.
+
+![[Pasted image 20241013140609.png]]
+> Click on the center of the blotch and drag your mouse to expand the marker. Adjust the size of the other radius using the toggles. Some blotches won't be quite circular/elliptical. Outline them as best you can.
+
+![[Pasted image 20241013140604.png]]
+> You're ready to map seasonal fans and blotches in real HiRISE data. Thanks for your help
+
+
+# Automatons-Satellite
+## AI For Mars
+![[Pasted image 20241013145557.png]]
+> You can help to make future Mars rovers safer by labelling Curiosity images! You will see a series of images the Curiosity rover took on Mars. Please draw polygons to label terrain types: sand, soil, bedrock, and big rocks.
+
+![[Pasted image 20241013145615.png]]
+> The trapezoid at the centre is for your visual aid. Its width is always 20 cm (5/8 ft) in Spirit/Opportunity-model images and 50 cm (~1 ½ feet) in Curiosity-model images. You can ignore features smaller than the width of the trapezoid. For example, you can see narrow bands of sand between bedrocks in the yellow polygons. Since these are obviously less than 50 cm in width, you can ignore them and include them in the bedrock label.
+
+![[Pasted image 20241020162418.png]]
+> In some images, the far field is darkened like this one. This indicates the terrain which is further than 30 meters away. You don’t need to label this area.
+
+![[Pasted image 20241020162526.png]]
+> Don't overlap - The rover would be confused if polygons overlapped with each other. It is OK to draw over the rover as we can remove that later.
+
+![[Pasted image 20241020162607.png]]
+> These are typical ”sand” terrains. It is like a beach on Earth. It is also covered with powdery and slippery dust that makes it challenging for rovers to drive through. This terrain type is usually characterized by ripples, as seen in this picture. Driving on it usually leaves deep wheel tracks.
+
+![[Pasted image 20241020162627.png]]
+> Here is an example of the “soil” terrain. The rovers are usually very happy on this terrain type. The surface has sufficient cohesion such that the rover does not experience significant slip. You often find small gravel on it but those won’t be obstacles for driving. You sometimes observe light wheel tracks left behind the rover on “soil” terrains.

@@ -5,6 +5,7 @@ tags:
   - Mechanics
   - Chapter-2
   - Chapter-1
+  - In-Progress
 ---
 (a note that this doc also contains stuff that may be added into #Chapter-1 later on, and content/mechanics that are part of the sprint to integrate it into #Chapter-2 )
 

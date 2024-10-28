@@ -4,6 +4,7 @@ tags:
   - field-guide
   - Star-Sailors
   - Classifications
+  - In-Progress
 ---
 The field guide is a mechanic from Zooniverse that helps users identify certain anomalies/entities in an anomalous media file. In its simplest form, it shows an example of every landmark/image the users would be looking for in the project (e.g. an image showing all possible animals to discover in #Iguana project).
 

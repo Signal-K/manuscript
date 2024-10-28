@@ -1,5 +1,7 @@
 ---
 sticker: lucide//bluetooth-off
+tags:
+  - In-Progress
 ---
 Essentially the same thing as in [[01 Chapter 1]]but without the second required classification type. Just need to introduce all the basic mechanics to the user
 
