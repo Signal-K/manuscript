@@ -65,7 +65,7 @@ Maybe the utilities section could be where the tutorial/tooltips are located?
 # Classifications
 *  Update the `classifications` table so that we can specify the anomaly type being classified
 	* [[First Mission Group - SGV2-40 Retrospective]]
-	* [[Classifications]]
+	* [[01 Chapter 3/Classifications/Classifications]]
 * The rich-text editor should be added back
 	* [[First Mission Group - SGV2-40 Retrospective]]
 * Freeform text is a privilege  for verified classifiers, checksums are the default

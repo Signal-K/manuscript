@@ -169,7 +169,7 @@ Intensity - bright, faint, medium ↓
 Bright clouds
 Faint clouds
 Clouds cover most of the height
-Clouds are smaller [[02 Citizen Modules/Classifications/Classifications|Classifications]]
+Clouds are smaller [[02 Citizen Modules/Archive/Classifications/Classifications|Classifications]]
 
 Explain the meta/image visual light
 Explain specifically what we're aiming to measure

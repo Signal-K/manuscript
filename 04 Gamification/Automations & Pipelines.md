@@ -43,4 +43,4 @@ Early-game, we'll have a "colonised/explored" planet that users can go to try ou
 
 Related:
 1. [[Citizen - Creative]]
-2. [[02 Citizen Modules/Classifications/Classifications|Classifications]]
+2. [[02 Citizen Modules/Archive/Classifications/Classifications|Classifications]]

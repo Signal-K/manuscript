@@ -10,7 +10,7 @@ banner: image 9.png
 The following boards will be set up:
 1. Populating (Generating) - 
 	1. All content population
-	2. All data population [[02 Citizen Modules/Data Sources/Data Sources]]
+	2. All data population [[02 Citizen Modules/Archive/Data Sources/Data Sources]]
 2. Mechanics -
 	1. Non-classification structures
 	2. Mining/resource management

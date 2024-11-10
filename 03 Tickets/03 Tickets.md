@@ -5,4 +5,4 @@ Key files:
 [[Timeline]]
 [[Mission list]]
 [[Basic recipes]]
-[[Structure list]] && [[05 Game Items/Structures/Structures|Structures]] && [[Structure per chapter]]
+[[Structure list]] && [[03 Game Items/Structures/Structures|Structures]] && [[Structure per chapter]]

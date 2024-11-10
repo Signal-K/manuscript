@@ -10,7 +10,7 @@ tags:
 sticker: lucide//bus
 banner: 00 Assets/Pasted image 20240614002944.png
 ---
-[[02 Citizen Modules/Data Sources/Data Sources|Data Sources]]
+[[02 Citizen Modules/Archive/Data Sources/Data Sources|Data Sources]]
 I'm taking a look at citizen science projects that have accessible data sets like TESS > `lightkurve` due to the simple nature of collecting all the data and adding it to the database. I've found a few options that are available here:
 
 ## Space-based

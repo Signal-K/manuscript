@@ -9,7 +9,7 @@ User picks what they'd like to do (module-wise), thxey are then given a structur
 
 This then starts filling out the mission log
 
-**[[05 Game Items/Structures/Structures|Structures]] should be created from the `ChapterOneOnboarding` component.** 
+**[[03 Game Items/Structures/Structures|Structures]] should be created from the `ChapterOneOnboarding` component.** 
 
 1. First [broken] classification
 1. Mining
