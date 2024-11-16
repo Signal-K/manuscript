@@ -48,7 +48,7 @@ Potentially surface analysis & other projects are some ideas for the new planets
 
 Missions will lead into mining, along with probing...deposits are created from your discoveries (as well as other things created from...will later be customisable/malleable)
 # Chapter-2
-In #Chapter-2  we'll allow the user to discover new planets/location #Anomalies as well as travel #off-Earth for re source missions. We'll also allow them to upload their own data, eventually the uploaded data will be able to be combined with things like the terrain & weather generators, e.g. users can upload clouds, once they're classified & confirmed in #Starnet they can appear in the user's #views.
+In #Chapter-2  we'll allow the user to discover new planets/location #Anomalies as well as travel #off-Earth for resource missions. We'll also allow them to upload their own data, eventually the uploaded data will be able to be combined with things like the terrain & weather generators, e.g. users can upload clouds, once they're classified & confirmed in #Starnet they can appear in the user's #views.
 
 We'll start new location generating by asking users to go to the #Disk-Detective & #PlanetHunter  projects in their #Telescope structure. We need to come up with missions for #biologists & #Meteorologists related to this as well. 
 
