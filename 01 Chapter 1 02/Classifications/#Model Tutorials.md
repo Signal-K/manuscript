@@ -185,6 +185,13 @@ Updated/custom -
 > Images like these where the lines on the sides are about as bright as the center line should be classified as "Gaps/Multiple lines/Other".
 
 
+Create a responsive component for citizen science project that allows users to browse image representation of potential radio signals from alien life (I've attached an image so you have some context about an example the user is looking at). It should show the image, a map of the stars (generated, topographic with contours) showing where the signal came from, and in that map show the radio wave being sent (not to scale) and hitting a satellite orbiting Earth (make a coloured generated Earth icon/image). Ask the user to select one of these values:
+1. Straight Line
+2. Jagged Line
+3. Missing points/Gaps/Multiple Lines/Other
+Allow the user to select a "hydrogen line" value (set to 21 by default), which zooms in or otherwise translates the image slightly. 
+Allow the user to make a comment for "general comments". 
+
 ## Sunspot detective
 "Just tell us how many individual sunspots you see"
 

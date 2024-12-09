@@ -29,7 +29,7 @@ I think #Mining will require a significant UI overhaul. And let's determine whic
 	4~~. We'll need to have a separate table for #Voting so that we can determine if users are voting on their own #classification or someone else's~~
 
 		1. ~~Show planets, then show the vote functionality - merge `DiscoveryCard` w/ `PostCardSingle`~~
-1. Determine where these post cards fit into the flow, maybe in the inventory
+1. ~~Determine where these post cards fit into the flow, maybe in the inventory~~
 	1. Each structure can also show discovered #Anomalies , so this will show the #PostCards obviously
 	2. The user is invited to create a vote on another #classification , once they do this they'll be directed to their " #Anomaly #Inventory " which will show entries in #classifications, #uploads & #comments  tables that they are "watching".    [[Structure UI]]
 	3. After thinking about it a little bit, I've decided that each #Structure will have an #AllDiscoveries action button.
@@ -55,7 +55,7 @@ Maybe a new layout for views that go over the background?
 
 And obviously the new structures....cleaning up...
 1. Ticket with table entries - `uploads`?
-2. Look at overhauling the `uploads` table
+2. ~~Look at overhauling the `uploads` table~~
 Missions should be pulled from a flask API so we don't need to do a merge into `signal-k/client:main` every time. Same with `/api/gameplay/inventory`...
 
 [[#^a56a3a]]
@@ -74,7 +74,7 @@ If we make good progress on the #Active-Sprint , we'll buy a new notebook, maybe
 
 How do we show different #views in #Anomalies ? I think we should create post cards that show a preview of planets (like sharing the #Structure #View ).
 
-Fix the bug around `Guide` not showing completed missions based on table entry.
+~~Fix the bug around `Guide` not showing completed missions based on table entry.~~
 Missions, insert everything and create mission for terrain or other generator.
 
 Closing:
@@ -87,8 +87,8 @@ Finish off these tickets
 # 16 November 2024
 1. ~~Handle migration Balwyn > PM~~
 2. Draw cards & layout for mining, cloud/map scene
-3. Integrate these missions
-4. Component/structure in `Guide` to open?
+3. ~~Integrate these missions~~
+4. ~~Component/structure in `Guide` to open?~~
 
 Working tree:
 1. #SSM-63
@@ -139,14 +139,30 @@ Updates/Changes -
 
 # 17 November 2024
 While at coffee:
-1. Design for missions & views, missions for each view and pathway -> #SSP-33 
-2. Review of belows:
+1. Design for missions & views, missions for each #View and pathway -> #SSP-33 
+	1. So we'll have the #Views exist as overlays. Users will be able to set their `configurations` in `posts` table, of type `view{$type}Configuration`, which means it won't show up in #Starnet #Feed 
+	2. This will allow users to have #Icons for their #Anomalies & #Classifications eventually
+	3. Users can "unlock" a testing mine to train their #Automatons, the #RoversS can't be transported off-world until they've been trained. Users will then need to view landmark candidates from other locations to find areas of interest and describe them. Once these have been identified and vetted, users can then travel to them
+	4. After this, users will then introduce some construction on these expeditions to acquire resources, learn more about the landmark(s), and add more data for the next step (sets of missions). We'll have unique observations and anomalies available (including for transport) for each playstyle
+	5. #MuonHunters will be introduced here...I think
+	6. We need to set up items/anomalies to find and what output/content corresponds e.g. #RoverPhotos for #mineralDeposits , eventually #life ?
+2. ~~Review of belows:~~
 3. Review (design and otherwise) of aboves
+	1. Potentially topography view includes weather?
 4. Improve #uploads flow & dedicated missions, integrate into #Surveyor & #votes 
+5. Consider adding a #Profile section/panel
 
-5. #SSG-66 - design for #StructureInfo
-6. #SSM-63 - dedicated "More" button rather than just clicking on the entire `RenderMission`
-7. Determine scope for [#SSC-40 ](https://signalk.atlassian.net/browse/SSC-30) 
+6. ~~#SSG-66 - design for #StructureInfo~~
+7. ~~#SSM-63 - dedicated "More" button rather than just clicking on the entire `RenderMission`~~
+8. ~~Determine scope for [#SSC-30 ](https://signalk.atlassian.net/browse/SSC-30)~~  & #SSM-40
+	1. Initially, we focus on #Landmarks as #sectors and allow users to manage #uploads and vote on their #Distribution
+	2. Then we can allow users to transport #Anomalies and have #events (like #Volcanic eruptions) affect things like #terraforming or other events/ #Anomalies 
+
+#SSM-21 : Get anomaly cards combined with post cards - SSM-21
+1. Allow #Comments & #Voting 
+2. Integrate into all #Structures 
+3. Plan next step with #SSC-30 / #SSM-40 
+4. Allow users to #Share #PostCards , that's about it for now. #PostCards will later include #views & #Configuration , #childAnomalies / #icons 
 
 Do a review of the #Create-Sprint and the original goals
 Organise #Tickets for this new sprint
@@ -154,3 +170,5 @@ Organise #Tickets for this new sprint
 > Broad goal - users can travel again, and there's a clear mission group across expeditions and exoplanet colonisation. Clear mission goals for each pathway and structure on different location types. Increased collaboration, communication, item sharing, consensus & surveyor (introduction through missions) and post cards, sharing to `posts` table (new) and external networks. New design for `StarnetLayout`
 
 It would probably also be a good idea to go through each defined #MissionGroup in #Jira and make any appropriate updates
+
+Starbound ideas...
