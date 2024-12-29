@@ -6,6 +6,9 @@ tags:
   - Biosphere
   - biodome
 ---
+![[Pasted image 20241216093617.png]]![[Pasted image 20241216093643.png]]![[Pasted image 20241216093651.png]]
+
+
 Here’s how **anomalies from each project** inform biome generation:
 
 #### **Jovian Vortex Hunters**
