@@ -10,3 +10,4 @@ tags:
   - Onboarding
 ---
 This #Layout will not include expandable sections.
+![[Pasted image 20250117112528.png]]
