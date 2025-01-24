@@ -32,7 +32,7 @@ For the new scene ( [[Earth Intro Missions]]), I think we'll be requiring the fo
 2. We'll need to take a look at the table schema and see if there's anything we can do there to streamline our ecosystem
 3. New database standards (see [[Database]])
 
-[[README]]
+[[01 Chapter 1 02/README]]
 ### Asset requirements
 1. New background
 2. Icons for every `action` or `button`

@@ -51,7 +51,7 @@ See [[01 Chapter 1]]
 1. "Classification" selector should be part of the big modal
 
 ## Content/Missions
-1. [[Galaxy map]] -> maybe a dynamic list that fans out based on the direction and magnitude of distance? User can filter by "have visited", etc
+1. [[02 Globals/Galaxy map]] -> maybe a dynamic list that fans out based on the direction and magnitude of distance? User can filter by "have visited", etc
 2. Get the animal/zoodex classification to pull in classification options based on mission, integrate creation of posts mentioning the storage key   #zoodex 
 3. Animals can discover things, be carried on roovers - powerups (cocoa beans citizen science idea?)
 
