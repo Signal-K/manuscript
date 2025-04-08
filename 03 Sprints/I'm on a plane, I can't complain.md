@@ -11,7 +11,7 @@ Here's what I could work on during my flight to Singapore:
 2. Design for timer
 3. Design for vegetation development
 	1. I think we'll have simple animals/plants develop first (or rather, we won't have any citizen science tie-over for bacterium/fungi for now)
-4. Milestone design
+4. ~~Milestone design~~
 	1. Where do we show them?
 	2. How do we tie them into the narrative (more closely)
 	3. Rewards
