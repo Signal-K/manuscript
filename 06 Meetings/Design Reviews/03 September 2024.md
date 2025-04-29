@@ -21,7 +21,7 @@ tags:
 6. [[Issues]]
 7. [[Planet Generator]]
 8. [[02 Globals/Bug Report]]
-9. [[Galaxy map]]
+9. [[02 Globals/Galaxy map]]
 10. [[Questions megadoc]]
 11. [[Structure per chapter]]
 12. [[API Content]] [[Marketplace & Exclusives]]
