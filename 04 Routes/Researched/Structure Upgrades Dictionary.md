@@ -58,6 +58,10 @@ Users will send out a probe (with a balloon) to a planet and it will return with
 **How does this relate to #milestones ?**
 So as described in #SSG-193, there (for now) won't be any limit on how many anomalies can be discovered by the #Weather-Balloon . The only limit is how many #events can be discovered per week. Because of this, we won't have any limits on milestones either. 
 
+# Biologists
+#biologists 
+Let's not worry about upload mechanics for now...let's just start with `cameraCount` and `stationSize`.
+The page should also show the current researched #BiodomeStation s.
 
 # Stardust & Milestones
 #Stardust #milestones 
@@ -68,3 +72,6 @@ So, the outcome of these notes are:
 - [ ] Stardust total calculation to take into account the xp value and the total number of tasks performed with milestones
 - [ ] Stardust to be increased for milestones, general '1'? point value for other tasks
 - [x] Update `totalPoints` to be based on #stardust spent... ✅ 2025-04-28
+
+
+![[Pasted image 20250430122751.png]]

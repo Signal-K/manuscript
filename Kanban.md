@@ -6,7 +6,6 @@ kanban-plugin: basic
 
 ## Icebox
 
-- [ ] Stardust to look at milestones for tasks
 - [ ] Overall p.gen prop that determines open/available setting panels
 - [ ] Upcoming events page (all events) should show a micro version of the planet generator next to it, like the scene drawings
 
@@ -14,7 +13,6 @@ kanban-plugin: basic
 ## Selected
 
 - [ ] Fix/update differences between biome definitions/events/lists
-- [ ] Fix density & other surveyor calculations
 
 
 ## In-Progress
@@ -26,7 +24,6 @@ kanban-plugin: basic
 
 ## Review
 
-- [ ] Redesign structure modal
 - [ ] Show upgrades in structures
 
 
@@ -34,6 +31,9 @@ kanban-plugin: basic
 
 **Complete**
 - [x] Show events across all terrariums
+- [x] Stardust to look at milestones for tasks
+- [x] Fix density & other surveyor calculations
+- [x] Redesign structure modal
 - [x] Allow events to be created
 - [x] All disciplines now have a researchable item SSG-190
 
@@ -42,6 +42,6 @@ kanban-plugin: basic
 
 %% kanban:settings
 ```
-{"kanban-plugin":"basic","new-note-folder":"03 Tickets/Sprints"}
+{"kanban-plugin":"basic","new-note-folder":"03 Tickets/Sprints","tag-colors":[{"tagKey":"","color":"","backgroundColor":""}]}
 ```
 %%

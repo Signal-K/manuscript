@@ -355,7 +355,7 @@ Look at the modular layout in PSS for ship building & research
 
 ## Definite
 - [x] Update TotalPoints with new missions ⏫ ✅ 2025-04-22
-- [ ] Stardust needs to show points breakdown🔼 
+- [x] Stardust needs to show points breakdown 🔼 ✅ 2025-05-05
 - [ ] Message to users about what to do next - e.g. #PlanetCompletion
 ## To put into 'proper place' in this doc (later)
 [Weather generator/events update with landmark templating](https://v0.dev/chat/fork-of-animated-weather-overlay-9lzHe34tRjK)
