@@ -3,10 +3,6 @@ tags:
   - Overview
 sticker: lucide//file-key
 ---
-Here's a comprehensive technical overview of the system, including how we fetch data, how we present it to our users, and how the classifications/data are returned to our partners and other researchers:
-
-(go into detail about Supabase, postgres, game items).
-
 ## User flow
 ### How users receive data
 Users are given three structures at the beginning, immediately after registration:
@@ -67,8 +63,11 @@ Then, we present the image to the modal that represents the user's structure (in
 
 ![[Pasted image 20250528201117.png |400]]
 
+Storage bucket > file (example):
+![[Pasted image 20250529140805.png]]
+
 ### Classifying data
-There are two main ways for users to make contributions (inputs) - classifications (of external research data), and providing their own research data (for example, photos - see the #uploads section below). 
+There are two main ways for users to make contributions (inputs) - classifications (of external research data), and providing their own research data (for example, photos - which for now isn't relevant to OnOrbit). 
 
 We have a relatively simple `classifications` table, which stores a record of every *primary* post/contribution of this type:
 ```sql
@@ -86,6 +85,105 @@ public.classifications (
 	constraint classifications_anomaly_fkey foreign key (anomaly) references anomalies (id),
 	constraint classifications_author_fkey foreign key (author) references profiles (id)
 ) tablespace pg_default;
+```
+
+When users annotate an "anomaly", we record it as a collection of answers from the user, identifying what they see. This content is then sent back to the relevant researchers; we've done our best to keep the primary data format from the original data source (e.g. zooniverse projects).
+![[Pasted image 20250529141346.png | 400]]
+
+![[Pasted image 20250529141430.png]]
+
+Classifications are posted via a tsx component:
+```tsx
+const createPost = async () => {
+	const flattenedOptions = classificationOptions.flat();
+	const classificationOptionsObj = Object.fromEntries(
+	
+	Object.entries(selectedOptions).map(([key, value]) => [
+	
+	flattenedOptions.find((option) => option.id === parseInt(key))?.text ||
+	
+	"",
+	
+	value,
+	
+	])
+	
+	);
+	
+	  
+	
+	const classificationConfiguration = {
+	
+	classificationOptions: classificationOptionsObj,
+	
+	additionalFields,
+	
+	parentPlanetLocation: parentPlanetLocation || null,
+	
+	activePlanet: activePlanet?.id,
+	
+	createdBy: inventoryItemId ?? null,
+	
+	classificationParent: parentClassificationId ?? null,
+	
+	annotationOptions: annotationOptions,
+	
+	};
+	
+	  
+try {
+	const { data: classificationData, error: classificationError } =
+		await supabase
+			.from("classifications")
+			.insert({
+				author: session?.user?.id,
+				content,
+				media: [uploads, assetMentioned],
+				anomaly: anomalyId,
+				classificationtype: anomalyType,
+				classificationConfiguration,	
+			})
+			
+			.single();
+	
+	if (classificationError) {
+		alert("Failed to create classification. Please try again.");
+		return;
+	} else {
+		setClassificationOutput(classificationConfiguration);
+		setContent("");
+		setSelectedOptions({});
+		setUploads([]);
+		setPostSubmitted(true);
+	};
+	
+	const { data: profileData, error: profileError } = await supabase
+		.from("profiles")
+		.select("classificationPoints")
+		.eq("id", session?.user?.id)
+		.single();
+	
+	if (profileError) throw profileError;
+	const newClassificationPoints = (profileData?.classificationPoints || 0) + 1;
+	
+	const { error: updatePointsError } = await supabase
+		.from("profiles")
+		.update({ classificationPoints: newClassificationPoints })
+		.eq("id", session?.user?.id);
+	if (updatePointsError) throw updatePointsError;
+	router.refresh();
+	window.location.reload();
+} catch (error: any) {
+	
+	console.error("Unexpected error:", error);
+
+};
+
+  
+
+router.refresh();
+
+};
 ```
 
 ---
@@ -109,19 +207,69 @@ Note - this is a preview of the current "painter":
 ![[Pasted image 20250528212213.png | 400]]
 This component is built using `3js`, but I'm fairly confident we could convert it to a [Unity build](https://github.com/signal-k/starsailors) considering that's how Star Sailors started originally (pre-2024).
 
+A lot of the other projects don't have a concrete reward beyond being another "data-source" or location to explore/work with in-game. Having said that, we do have ideas - but we want to track user behaviour a bit more first before committing to potentially less popular projects strongly right now. Rewards and other incentives/narrative elements will of course be distributed retrospectively to all users for all classifications. 
+### Disk Detective
+1. Datasets: [DiskDetective](https://www.zooniverse.org/projects/ssilverberg/disk-detective/about/research)
+2. Goal: Catalogue potential debris disks to find early planet formation events
+
+![[Pasted image 20250528213538.png | 450]]
+1. Main goal during the initial classification process is to keep a similar format to the live Zooniverse project with some additional custom data.
+2. No concrete plans to integrate annotation in, yet.
 ### Sunspots
 1. Datasets: [Sunspot Detective](https://www.zooniverse.org/projects/teolixx/sunspot-detectives)
 2. Goal: catalogue the number of sunspots from historical dataset
 ![[Pasted image 20250528211330.png | 400]]
 
+### Daily Minor Planet
+1. Dataset: [The DailyMinorPlanet](https://www.zooniverse.org/projects/fulsdavid/the-daily-minor-planet)
+2. Goal: Users annotate images to identify new asteroid [candidates]
+![[Pasted image 20250528214410.png | 350]]![[Pasted image 20250528214424.png]]
 
+Note: like with #Disk-Detective , we currently don't have annotation features for DMP project, however it is something we would like to add.
+
+Reward:
+1. Another location and resource source/site
+2. Access to the #ActiveAsteroids project:
+
+![[Pasted image 20250528214618.png | 350]] ![[Pasted image 20250528214713.png | 350]]
+
+Each project has multiple activities (commenting, voting on classifications, etc). Some projects have multiple datasets that can be unlocked. Active Asteroids is the logical next step for the Asteroid classification project [group].
+
+#### DMP: >> Active Asteroids
+1. [Dataset for active asteroids](https://www.zooniverse.org/projects/orionnau/active-asteroids)
+2. Goal: find asteroids that resemble comets to help astronomers learn more about water transportation in the early days of the #Solar-System 
+![[Pasted image 20250528214840.png | 400]]
 ### Other projects
 1. Greenhouse - 
 	1. Annotate Burrowing Owl behaviour
 	2. Annotate Iguana behaviour
 	3. Annotate penguin behaviour
 	4. Annotate plankton behaviour
-2. 
+2. Weather Balloon (Geology/Meteorology)
+	1. [AI4M](https://www.zooniverse.org/projects/hiro-ono/ai4mars/about/research)
+	2. [Planet Four](https://www.zooniverse.org/projects/mschwamb/planet-four/about/research)
+
+### Cloudspotting on Mars
+1. Dataset: [Cloudspotting on Mars](https://www.zooniverse.org/projects/marek-slipski/cloudspotting-on-mars)
+2. Goal: Find clouds during "Mars Year 29" and identify how mesospheric clouds change during different seasons on Mars
+
+![[Pasted image 20250529134002.png | 400]]
+
+Reward for user:
+1. Users can then participate in the next phase of Cloudspotting, which is "Cloudspotting on Mars: Shapes" (see below)
+
+#### Cloudspotting on Mars: Shapes
+1. Dataset: [Cloudspotting on Mars: Shapes](https://www.zooniverse.org/projects/matteocrismani/cloudspotting-on-mars-shapes/about/research)
+2. Goal: Further investigations of how clouds form on Mars
+
+![[Pasted image 20250529135009.png | 300]] ![[Pasted image 20250529140457.png | 500]]
+
+### Jovian Vortex Hunters
+1. Dataset: [Jovian Vortex Hunters](https://www.zooniverse.org/projects/ramanakumars/jovian-vortex-hunter/)
+2. Goal: Identify the diversity of cloud structures on Jupiter and what leads to this diversity
+
+![[Pasted image 20250529141046.png | 400]]
+
 
 
 ---
@@ -155,7 +303,7 @@ The platform employs gamification to enhance user engagement:
 - **Achievements and Rewards**: Successful classifications and contributions earn users badges, points, or other virtual rewards.
 - **Interactive Tutorials**: New users are onboarded through tutorials that explain the classification process and tools.
 ### Classification Workflow
-1. **Data Presentation**: Users are presented with data visualizations (e.g., light curves).
+1. **Data Presentation**: Users are presented with data visualisations (e.g., light curves).
 2. **Analysis Tools**: Interactive tools allow users to zoom, annotate, and manipulate the data for better analysis.
 3. **Classification Submission**: Users classify the data based on observed patterns and submit their findings.
 4. **Community Review**: Submissions may be reviewed or discussed within the community for validation.
@@ -165,26 +313,17 @@ The platform employs gamification to enhance user engagement:
 ## 🔄 Data Flow and Backend Integration
 
 ### Supabase Integration
-
 Supabase serves as the backend infrastructure, providing:
-
 - **Authentication**: Managing user sign-ups, logins, and session handling.
-    
 - **Database**: Storing user data, classifications, and project information in a PostgreSQL database.
-    
 - **Storage**: Handling file uploads, such as user-submitted images or annotations.
-    
-
-The frontend communicates with Supabase through its JavaScript client library, enabling real-time data synchronization and updates.
 
 ### Frontend Architecture
 
 Built with Next.js and React, the frontend includes:
 
 - **Components**: Reusable UI elements for displaying data, forms, and interactive tools.
-    
 - **Pages**: Routes corresponding to different views, such as project overviews, classification interfaces, and user profiles.
-    
 - **Hooks**: Custom React hooks for managing state and side effects, particularly for data fetching and user interactions.
     
 
@@ -192,40 +331,11 @@ Built with Next.js and React, the frontend includes:
 
 ## 🔬 Integration with Lightkurve and Similar Services
 
-The platform leverages external services like Lightkurve to enrich its datasets:
+The platform leverages external services like #Lightkurve to enrich its datasets:
 
 - **Data Acquisition**: Lightkurve is used to download and process light curve data from missions like Kepler and TESS.
-    
 - **Preprocessing**: Data is cleaned and formatted into CSV files, which are then uploaded to Supabase storage.
-    
 - **Visualization**: Processed data is visualized using Python libraries, and the resulting images are stored for user interaction.
     
 
-This integration ensures that users have access to high-quality, preprocessed data for classification tasks.
-
 ---
-
-## 📁 File Structure Overview
-
-The repository is organized as follows:
-
-- **`app/`**: Contains the main application code, including pages and routing.
-    
-- **`components/`**: Reusable React components for building the UI.
-    
-- **`hooks/`**: Custom React hooks for managing logic and state.
-    
-- **`lib/`**: Utility functions and libraries for data processing and API interactions.
-    
-- **`public/`**: Static assets like images and icons.
-    
-- **`styles/`**: CSS and styling files.
-    
-- **`supabase/`**: Configuration and initialization of the Supabase client.
-    
-- **`types/`**: TypeScript type definitions for data structures.
-    
-
----
-
-This comprehensive architecture enables the Signal-K platform to provide an engaging and scientifically valuable experience for users participating in citizen science projects.
