@@ -34,15 +34,15 @@ kanban-plugin: basic
 ## In Review
 
 - [ ] Reach out to Merkat & other colleagues
-- [ ] Fixing weird width/display issues in modals JIRA:SSG-162
-- [ ] JIRA:SSG-224 #Layout #Mobile #annotations
-- [ ] Improve onboarding layout (pokemon scenes...) JIRA:SSM-200 #Onboarding #Layout
-- [ ] JIRA:SSG-226 #Styling
 
 
 ## Done
 
 **Complete**
+- [x] JIRA:SSG-226 #Styling
+- [x] Improve onboarding layout (pokemon scenes...) JIRA:SSM-200 #Onboarding #Layout
+- [x] JIRA:SSG-224 #Layout #Mobile #annotations
+- [x] Fixing weird width/display issues in modals JIRA:SSG-162
 - [x] Research page should reflect the new modal design of the structure routes JIRA:SSG-229 JIRA:SSG-228 #Layout #Research
 - [x] JIRA:SSG-234 [[Technical Overview]] #OnOrbit #Overview #Partnerships
 - [x] JIRA:SSG-234 Send draft of [[Technical Overview]] to `adrian@onorbit.online` #Overview #Partnerships #OnOrbit
