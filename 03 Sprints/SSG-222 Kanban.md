@@ -22,7 +22,6 @@ kanban-plugin: basic
 - [ ] Community milestones
 - [ ] Adding annotation feature to DMP?
 - [ ] SPECTROSCOPY...
-- [ ] JIRA:SSG-235 #Research #Context #Onboarding #Tutorial
 
 
 ## In Progress
@@ -33,6 +32,7 @@ kanban-plugin: basic
 
 ## In Review
 
+- [ ] JIRA:SSG-235 #Research #Context #Onboarding #Tutorial
 - [ ] Reach out to Merkat & other colleagues
 
 
