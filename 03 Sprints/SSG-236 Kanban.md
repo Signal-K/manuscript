@@ -6,44 +6,34 @@ kanban-plugin: basic
 
 ## Icebox
 
-- [ ] Design and narrative concept/proposal for community #Milestone
-- [ ] Sharing post cards - for post-classification scene JIRA:SSP-102 #PostCards #Share #ClassificationForm
-- [ ] Include classification options & result in next-scene #SSG-241 #ClassificationOptions
 
 
 ## Backlog
 
-- [ ] New milestones for the next week #Milestone #Deployment
-- [ ] Make classification scene full-screen on mobile #Classification #ClassificationForm #Mobile #Layout
-- [ ] BUG: CoM Shapes is not functional #CloudspottingOnMars #Shapes #Bug
-- [ ] Update Supabase URL #Billing #Request #Supabase
 
 
 ## Selected
 
-- [ ] New BUG: Setup profile not working (at least on local instance) #Profile #Database #Supabase #Bug
-- [ ] Fix tutorial buttons not working #Tutorial #Missions #Classifications
-- [ ] Get Dan to upgrade our Vercel? Supabase account #Vercel  #Supabase #Billing
-- [ ] Make alerts more prominent? for new discoveries #Alerts #Deploy #AllDiscoveries #Missions
-- [ ] Make structure pages not modals on mobile #Mobile #Modal #Structure #Layout
-- [ ] `linked_anomalies` to mention specified planet OR Earth depending on deploy mechanic #Deploy #Deployment #Anomalies #linked_anomalies
 
 
 ## In-Progress
 
-- [ ] Fix colour scheme, certain buttons aren't visible #Styling #Layout #tailwind
 - [ ] Get v0 to draw new scenes
-- [ ] Share the shit out of the new stuff
 
 
 ## In-Review
 
-- [ ] Telescope update - see SSG-236 panel
+- [ ] Share the shit out of the new stuff
+- [ ] Fix tutorial buttons not working #Tutorial #Missions #Classifications
+- [ ] Fix colour scheme, certain buttons aren't visible #Styling #Layout #tailwind
 
 
 ## Done
 
 **Complete**
+- [x] New milestones for the next week #Milestone #Deployment
+- [x] Telescope update - see SSG-236 panel
+- [x] Sharing post cards - for post-classification scene JIRA:SSP-102 #PostCards #Share #ClassificationForm
 - [x] Identify why alerts aren't proceeding <br>JIRA:SSM-202<br><br>#Alerts #Bug #Milestone
 - [x] JIRA:SSM-203 #SSM-203 #PostCard #Missions
 - [x] "Next step" instructions for post-classification scene JIRA:SSG-241 #SSG-241 #PostCard #SSG-237
