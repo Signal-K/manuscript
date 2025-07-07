@@ -8,6 +8,8 @@ sticker: lucide//curly-braces
 ---
 Hi! I'm Liam, and I'm the lead engineer behind the citizen science protocol "Star Sailors". I've decided to start writing development logs again so our new players and partners can stay up to date with what's going on - and hopefully I can bring a few new users in along the way.
 
+Update: [published - ](https://dev.to/gizmotronn/star-sailors-returns-379o) 
+
 The last post I wrote about Star Sailors was way back in the middle of the Buildspace S5 Incubator...[here's a link](https://dev.to/gizmotronn/star-sailors-v2-is-publicly-availablesort-of-3p6) if anybody wants to check that out. We've come a long way since then, with over 400 commits, around 1 million lines of code changed...and plenty of other meaningless stats. 
 
 I'm going to do my best to keep this post relatively short, but I'll be aiming to provide updates every week and will provide more comprehensive documentation on our development website.
