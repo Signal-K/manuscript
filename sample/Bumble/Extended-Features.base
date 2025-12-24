@@ -1,0 +1,43 @@
+source: _Tasks/Bumble/Stories
+filter:
+  segment: "Extended Features"
+views:
+  - type: cards
+    name: Stories
+    sort:
+      - property: priority
+        direction: DESC
+      - property: status
+        direction: ASC
+    image: note.banner
+    imageAspectRatio: 0.6
+  - type: table
+    name: All Tasks
+    source: tasks
+    filters:
+      and:
+        - file.path ^= "_Tasks/Bumble/"
+        - contains(text, "Extended Features")
+- [ ] Mix fertiliser into soil
+- [ ] New things to grow
+- [ ] Should tilling soil result in reducing the durability of your tools?
+- [ ] Connecting all async storage to supabase/electric
+- [ ] Create a new merchant for consumables packaging e.g. for honey
+- [ ] Allow users to view cross-sections of hives (cosmetic feature)
+- [x] Add initial buildings & blocks/elements to Landscape scene for Bumble #Landscape #Scene #Elements #Blocks 🆔 8lf812 🔼 ✅ 2025-12-03
+- [x] Enable zooming in on bee classification image 🔼 🆔 2rb8p4 ^ ![[Pasted image 20251204121058.png || 200]] ✅ 2025-12-04
+- [x] Shovel & harvest buttons/functionality to be merged 🆔 d6l241 🔼 ✅ 2025-12-03
+- [x] Add water tank with dynamic fill texture to landscape scene 🆔 35jyjy 🔼 🛫 2025-12-05 📅 2025-12-05 ✅ 2025-12-05
+- [x] New config file for tool buttons 🆔 eqzeo2 🔽 🛫 2025-12-05 📅 2025-12-05 ✅ 2025-12-05
+- [x] Fix bug where water drops appear before "Ready" 🆔 4ka093 ⏫ 📅 2025-12-05 ✅ 2025-12-05
+- [x] Find harvest button & fix hotbar slot manual override issue #Godot 🆔 p3ur9z 🛫 2025-12-07 📅 2025-12-07 ✅ 2025-12-07
+- [x] Kick-off new template/second step 🆔 g483y9 📅 2025-12-07 ✅ 2025-12-07
+
+## 📝 Future Ideas
+
+Longer-term bee breeding/population strategy will be based on bees flying around plants, spreading pollen and reducing growth time between growth stages. Just as soon as I figure out how to make a compelling game with long growth times.
+
+## Stories (Placeholder)
+- Allow users to explore coral regions
+- Allow users to fish and classify marine life
+- Allow users to expand their gardens

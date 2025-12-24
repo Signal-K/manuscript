@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>SSG-293</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Quartz 4"/><meta property="og:title" content="SSG-293"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="SSG-293"/><meta name="twitter:description" content="Building off from SSG-292 Probably, the other big goals would be to improve responsiveness, clearness of “next steps”."/><meta property="og:description" content="Building off from SSG-292 Probably, the other big goals would be to improve responsiveness, clearness of “next steps”."/><meta property="og:image:alt" content="Building off from SSG-292 Probably, the other big goals would be to improve responsiveness, clearness of “next steps”."/><meta property="twitter:domain" content="quartz.jzhao.xyz"/><meta property="og:url" content="https://quartz.jzhao.xyz/_Sprints/Archive/2025/SSG-293"/><meta property="twitter:url" content="https://quartz.jzhao.xyz/_Sprints/Archive/2025/SSG-293"/><link rel="icon" href="../../../static/icon.png"/><meta name="description" content="Building off from SSG-292 Probably, the other big goals would be to improve responsiveness, clearness of “next steps”."/><meta name="generator" content="Quartz"/><link href="../../../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL3Njcm9vYnovTmF2aWdhdGlvbi9xdWFydHovcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../../../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://quartz.jzhao.xyz/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://quartz.jzhao.xyz/_Sprints/Archive/2025/SSG-293-og-image.webp"/><meta property="og:image:url" content="https://quartz.jzhao.xyz/_Sprints/Archive/2025/SSG-293-og-image.webp"/><meta name="twitter:image" content="https://quartz.jzhao.xyz/_Sprints/Archive/2025/SSG-293-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="_Sprints/Archive/2025/SSG-293"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../../..">Quartz 4</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../_Sprints/">_Sprints</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../_Sprints/Archive/">Archive</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../../_Sprints/Archive/2025/">2025</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>SSG 293</a></div></nav><h1 class="article-title">SSG-293</h1><p show-comma="true" class="content-meta"><time datetime="2025-11-09T12:52:22.000Z">Nov 09, 2025</time><span>10 min read</span></p><ul class="tags"><li><a href="../../../tags/Sprints" class="internal tag-link">Sprints</a></li><li><a href="../../../tags/SSG-293" class="internal tag-link">SSG-293</a></li><li><a href="../../../tags/Comments" class="internal tag-link">Comments</a></li><li><a href="../../../tags/INBOX-1" class="internal tag-link">INBOX-1</a></li><li><a href="../../../tags/RecentDiscoveries" class="internal tag-link">RecentDiscoveries</a></li><li><a href="../../../tags/INBOX-2" class="internal tag-link">INBOX-2</a></li><li><a href="../../../tags/INBOX-3" class="internal tag-link">INBOX-3</a></li><li><a href="../../../tags/Countdown" class="internal tag-link">Countdown</a></li><li><a href="../../../tags/Next" class="internal tag-link">Next</a></li><li><a href="../../../tags/AI4Mars-17" class="internal tag-link">AI4Mars-17</a></li><li><a href="../../../tags/Inventory" class="internal tag-link">Inventory</a></li><li><a href="../../../tags/Viewport" class="internal tag-link">Viewport</a></li><li><a href="../../../tags/AI4Mars-15" class="internal tag-link">AI4Mars-15</a></li><li><a href="../../../tags/AI4Mars-16" class="internal tag-link">AI4Mars-16</a></li><li><a href="../../../tags/NGTS-1" class="internal tag-link">NGTS-1</a></li><li><a href="../../../tags/DATABASE-1" class="internal tag-link">DATABASE-1</a></li><li><a href="../../../tags/RESEARCH-11" class="internal tag-link">RESEARCH-11</a></li><li><a href="../../../tags/DEPLOY-14" class="internal tag-link">DEPLOY-14</a></li><li><a href="../../../tags/NGTS" class="internal tag-link">NGTS</a></li><li><a href="../../../tags/NGTS-2" class="internal tag-link">NGTS-2</a></li><li><a href="../../../tags/Bumble" class="internal tag-link">Bumble</a></li><li><a href="../../../tags/ALMANAC-2" class="internal tag-link">ALMANAC-2</a></li><li><a href="../../../tags/imbox" class="internal tag-link">imbox</a></li><li><a href="../../../tags/inventory" class="internal tag-link">inventory</a></li><li><a href="../../../tags/INBOX-4" class="internal tag-link">INBOX-4</a></li><li><a href="../../../tags/Spectroscopy" class="internal tag-link">Spectroscopy</a></li><li><a href="../../../tags/DEPLOY-12" class="internal tag-link">DEPLOY-12</a></li><li><a href="../../../tags/Weather" class="internal tag-link">Weather</a></li><li><a href="../../../tags/DEPLOY-13" class="internal tag-link">DEPLOY-13</a></li><li><a href="../../../tags/AI4Mars-13" class="internal tag-link">AI4Mars-13</a></li><li><a href="../../../tags/AI4Mars-14" class="internal tag-link">AI4Mars-14</a></li><li><a href="../../../tags/Roving" class="internal tag-link">Roving</a></li><li><a href="../../../tags/ROVER-1" class="internal tag-link">ROVER-1</a></li><li><a href="../../../tags/LOAD-1" class="internal tag-link">LOAD-1</a></li><li><a href="../../../tags/Research" class="internal tag-link">Research</a></li><li><a href="../../../tags/RESEARCH-9" class="internal tag-link">RESEARCH-9</a></li><li><a href="../../../tags/Deploy" class="internal tag-link">Deploy</a></li><li><a href="../../../tags/client" class="internal tag-link">client</a></li><li><a href="../../../tags/Bug" class="internal tag-link">Bug</a></li><li><a href="../../../tags/Satellite" class="internal tag-link">Satellite</a></li><li><a href="../../../tags/VIEWPORT-3" class="internal tag-link">VIEWPORT-3</a></li><li><a href="../../../tags/Star-Sailors" class="internal tag-link">Star-Sailors</a></li><li><a href="../../../tags/Recommendations" class="internal tag-link">Recommendations</a></li><li><a href="../../../tags/Imbox" class="internal tag-link">Imbox</a></li><li><a href="../../../tags/Panel" class="internal tag-link">Panel</a></li></ul></div></div><article class="popover-hint"><p>Building off from <a href="../../../_Sprints/Archive/2025/SSG-292" class="internal" data-slug="_Sprints/Archive/2025/SSG-292">SSG-292</a></p>
+<p>Probably, the other big goals would be to improve responsiveness, clearness of “next steps”.</p>
+<h1 id="adding-consensus">Adding consensus<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adding-consensus" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h3 id="consensusimbox-viewport">Consensus/imbox viewport<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#consensusimbox-viewport" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul class="contains-task-list">
+<li>
+<p>See posts to review. Make sure <a href="../../.././../../tags/Comments" class="tag-link internal alias" data-slug="tags/Comments">Comments</a> facility is functional</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" checked disabled/> Imbox component that shows comments &amp; votes on your post - <a href="../../.././../../tags/INBOX-1" class="tag-link internal alias" data-slug="tags/INBOX-1">INBOX-1</a> ✅ 2025-10-21</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" checked disabled/> Re-add <a href="../../.././../../tags/RecentDiscoveries" class="tag-link internal alias" data-slug="tags/RecentDiscoveries">RecentDiscoveries</a> into imbox - <a href="../../.././../../tags/INBOX-2" class="tag-link internal alias" data-slug="tags/INBOX-2">INBOX-2</a> ✅ 2025-10-21</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" checked disabled/> Add a third tab to show other users’ discoveries - <a href="../../.././../../tags/INBOX-3" class="tag-link internal alias" data-slug="tags/INBOX-3">INBOX-3</a> ✅ 2025-10-21</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> Some sort of ‘live popup’ (like the iPhone’s Dynamic Island) that shows classifications available for voting &amp; commenting. This will probably be some sort of <a href="../../.././../../tags/Countdown" class="tag-link internal alias" data-slug="tags/Countdown">Countdown</a> widget that I will work to implement next sprint (the final sprint!)</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" disabled/> New layout for <a href="../../.././../../tags/Next" class="tag-link internal alias" data-slug="tags/Next">Next</a> scene
+^^ I’m also going to need to take a look at how the layouts will work and what sort of things users will be commenting, for each <code>classificationtype</code>.</p>
+</li>
+</ul>
+<h4 id="show-conflicts---eg-if-two-people-have-surveyed-the-same-planet">Show conflicts - e.g. if two people have surveyed the same planet<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#show-conflicts---eg-if-two-people-have-surveyed-the-same-planet" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Not really sure how this will work, yet</p>
+<h1 id="resource-extractionmining">Resource extraction/mining<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#resource-extractionmining" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled/> Add the mining/extraction research types (for vapours, ices and minerals) ✅ 2025-10-25 - <a href="../../.././../../tags/AI4Mars-17" class="tag-link internal alias" data-slug="tags/AI4Mars-17">AI4Mars-17</a></li>
+<li class="task-list-item"><input type="checkbox" checked disabled/> Simple animation &amp; scene in the <a href="../../.././../../tags/Inventory" class="tag-link internal alias" data-slug="tags/Inventory">Inventory</a> <a href="../../.././../../tags/Viewport" class="tag-link internal alias" data-slug="tags/Viewport">Viewport</a> - <a href="../../.././../../tags/AI4Mars-15" class="tag-link internal alias" data-slug="tags/AI4Mars-15">AI4Mars-15</a> ✅ 2025-10-24</li>
+<li class="task-list-item"><input type="checkbox" checked disabled/> New inventory table, delete deposits (or “drain” them). Possibly some sort of GH action to archive drained deposits - <a href="../../.././../../tags/AI4Mars-16" class="tag-link internal alias" data-slug="tags/AI4Mars-16">AI4Mars-16</a> ✅ 2025-10-26</li>
+</ul>
+<p>Confirmed that draining works:
+<img src="../../../Pasted-image-20251026105430.png" width="auto" height="auto" alt/></p>
+<h1 id="planets">Planets<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#planets" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h4 id="ngts-integration">NGTS Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ngts-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled/> Download anomalies &amp; add to both providers - <a href="../../.././../../tags/NGTS-1" class="tag-link internal alias" data-slug="tags/NGTS-1">NGTS-1</a> (<code>anomalySet</code> : <code>NGTS</code>) ✅ 2025-10-26</li>
+<li class="task-list-item"><input type="checkbox" checked disabled/> Update <code>upload.py</code> to add to both providers - <a href="../../.././../../tags/DATABASE-1" class="tag-link internal alias" data-slug="tags/DATABASE-1">DATABASE-1</a> ✅ 2025-10-26</li>
+</ul>
+<blockquote>
+<p>Need to make sure this is done without exposing secrets to GH</p>
+</blockquote>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled/> Add a research item to unlock new <code>lightcurve</code> types - <a href="../../.././../../tags/RESEARCH-11" class="tag-link internal alias" data-slug="tags/RESEARCH-11">RESEARCH-11</a> ✅ 2025-10-26
+<img src="../../../Pasted-image-20251026105609.png" width="350" height="auto" alt="|"/>
+<img src="../../../Pasted-image-20251026154855.png" width="350" height="auto" alt="|"/></li>
+<li class="task-list-item"><input type="checkbox" checked disabled/> Telescope can find these new anomalySet entries - different colour <a href="../../.././../../tags/DEPLOY-14" class="tag-link internal alias" data-slug="tags/DEPLOY-14">DEPLOY-14</a> ✅ 2025-10-26</li>
+<li class="task-list-item"><input type="checkbox" checked disabled/> New classification component - <a href="../../.././../../tags/NGTS" class="tag-link internal alias" data-slug="tags/NGTS">NGTS</a> with new annotation models/types? - <a href="../../.././../../tags/NGTS-2" class="tag-link internal alias" data-slug="tags/NGTS-2">NGTS-2</a> ✅ 2025-10-26
+<img src="../../../Pasted-image-20251026161501.png" width="500" height="auto" alt="|"/></li>
+</ul>
+<p><img src="../../../Pasted-image-20251026155849.png" width="200" height="auto" alt="|"/></p>
+<h1 id="bumble">Bumble<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bumble" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><a href="../../.././../../tags/Bumble" class="tag-link internal alias" data-slug="tags/Bumble">Bumble</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled/> Make almanac a new page with consistent styling &amp; layout/dimensions - <a href="../../.././../../tags/ALMANAC-2" class="tag-link internal alias" data-slug="tags/ALMANAC-2">ALMANAC-2</a> ✅ 2025-10-20</li>
+</ul>
+<p><a href="../../../Bee-minigame" class="internal alias" data-slug="Bee-minigame">Bee minigame</a></p>
+<p>Just getting it distributed will be the goal (for this sprint), I think.
+Then, we can figure out things like more plants, animations and additional scenes (e.g. transitioning to different planets available in your archive). Around that point, we can figure out if Expo/React Native is the way to go for Bumble. I have a feeling it is, simply because the animations required aren’t too heavy, so far the sprite support is alright and it’s a 2d top-down game.</p>
+<h1 id="ui-improvementschanges">UI Improvements/changes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ui-improvementschanges" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled/> Adding textures to <a href="../../.././../../tags/imbox" class="tag-link internal alias" data-slug="tags/imbox">imbox</a> / <a href="../../.././../../tags/inventory" class="tag-link internal alias" data-slug="tags/inventory">inventory</a> viewports - <a href="../../.././../../tags/INBOX-4" class="tag-link internal alias" data-slug="tags/INBOX-4">INBOX-4</a> ✅ 2025-10-27</li>
+</ul>
+<h1 id="deployment-changes">Deployment changes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#deployment-changes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="satellite">Satellite<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#satellite" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>For the <code>satelliteCount</code> upgrade, here’s the basic debugging/implementation flow (suggestion):</p>
+<ol>
+<li>Determine number of satellites user has available</li>
+<li>Sidebar shows deploy button if the user has >0 ^<span>⇐</span>4 <code>linked_anomalies</code> but >1 total satellite</li>
+<li>If >1 total satellite, show two satellites &amp; the deployment status in the sidebar</li>
+</ol>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled/> Maybe an <code>i</code> button for each stat (including <a href="../../.././../../tags/Spectroscopy" class="tag-link internal alias" data-slug="tags/Spectroscopy">Spectroscopy</a> ) that shows info on the source (e.g. who classified) ✅ 2025-10-27</li>
+<li class="task-list-item"><input type="checkbox" checked disabled/> If a planet has a confirmed type, show it on the deploy page <a href="../../.././../../tags/DEPLOY-12" class="tag-link internal alias" data-slug="tags/DEPLOY-12">DEPLOY-12</a> ✅ 2025-10-27
+<img src="../../../Pasted-image-20251027073221.png" width="auto" height="auto" alt/></li>
+<li class="task-list-item"><input type="checkbox" disabled/> If a planet has a confirmed type, filter the linked_anomalies cloud types for the <a href="../../.././../../tags/Weather" class="tag-link internal alias" data-slug="tags/Weather">Weather</a> mission - <a href="../../.././../../tags/DEPLOY-13" class="tag-link internal alias" data-slug="tags/DEPLOY-13">DEPLOY-13</a></li>
+</ul>
+<p>Possibly a new satellite viewport layout, especially for the weather satellite mission/deployment type.</p>
+<h1 id="rover">Rover<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rover" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled/> Initial React Native/Expo setup - <a href="../../.././../../tags/AI4Mars-13" class="tag-link internal alias" data-slug="tags/AI4Mars-13">AI4Mars-13</a> ✅ 2025-10-21</li>
+<li class="task-list-item"><input type="checkbox" checked disabled/> Integration of 3d models - <a href="../../.././../../tags/AI4Mars-14" class="tag-link internal alias" data-slug="tags/AI4Mars-14">AI4Mars-14</a> ✅ 2025-10-21
+<img src="../../../Pasted-image-20251020142803.png" width="400" height="auto" alt="|"/></li>
+</ul>
+<blockquote>
+<p>What would be a good milestone for this week for <a href="../../.././../../tags/Roving" class="tag-link internal alias" data-slug="tags/Roving">Roving</a>?</p>
+</blockquote>
+<ol>
+<li>Users can make deployments</li>
+<li>Rover moves</li>
+<li>Scene (background/surface) moves</li>
+<li>Battery &amp; currency earn</li>
+<li>Classification?</li>
+</ol>
+<p>stupid terminal interface
+<a href="https://github.com/Signal-K/roving/commit/70f468cc8c1a64e14b474664a17fc228493c5655" class="external">https://github.com/Signal-K/roving/commit/70f468cc8c1a64e14b474664a17fc228493c5655<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - this was actually for the surface changes</p>
+<p>I’m going to try and force something through with a 3d interface, but a birds-eye view would be the fallback.</p>
+<p>Eventually it might be worth looking at Godot but I want to get some early versions out first using Expo.</p>
+<p><img src="../../../Pasted-image-20251021174546.png" width="400" height="auto" alt="|"/>
+Hmmm. Can we do something with lakes so that the missing space just looks like it has liquid? Lol.</p>
+<p>Maybe we could have multiple scenes/maps?</p>
+<p>If the 3d scene is too hard, we could have a birds-eye view and a minimap component that shows “from the rover’s camera” or someth.</p>
+<p><img src="../../../Pasted-image-20251021222502.png" width="250" height="auto" alt="|"/>
+So this is where I’m at at the end of Tuesday. So building a UI window around the landscape, improving load time &amp; load UI, and reducing the size of the rover (while scaling the camera positioning) is probably going to be my goal for Wednesday.</p>
+<h5 id="wednesday">Wednesday<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#wednesday" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<p>First up, I’m working on reducing the size of the rover:</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled/> Reduce size of rover in gameplay scene <a href="../../.././../../tags/ROVER-1" class="tag-link internal alias" data-slug="tags/ROVER-1">ROVER-1</a> ✅ 2025-10-22
+<img src="../../../Pasted-image-20251022160548.png" width="200" height="auto" alt="|"/>. This is probably the best I can do</li>
+</ul>
+<p>Then, the introduction of smooth loading is probably a good start:</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Improve smoothness of loading transition for 3d scenes in <a href="../../.././../../tags/Roving" class="tag-link internal alias" data-slug="tags/Roving">Roving</a> - <a href="../../.././../../tags/LOAD-1" class="tag-link internal alias" data-slug="tags/LOAD-1">LOAD-1</a></li>
+</ul>
+<h1 id="bugs">Bugs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bugs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="research">Research<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="../../.././../../tags/Research" class="tag-link internal alias" data-slug="tags/Research">Research</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled/> For some reason, after some time, tech that has already been researched (i.e. is in <code>researched</code> table for the user) are appearing again in the “Available” section - <a href="../../.././../../tags/RESEARCH-9" class="tag-link internal alias" data-slug="tags/RESEARCH-9">RESEARCH-9</a> ✅ 2025-10-21
+Follow-up to this point:</li>
+</ul>
+<blockquote>
+<p>When the page first loads, it shows everything inside the available section before then moving them to the correct ones</p>
+</blockquote>
+<h2 id="972fa2">Post-sprint ideas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#972fa2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p></p>
+<ul>
+<li>Push notifications will not be touched in this sprint</li>
+<li>I have a feeling that I may want to get the Telescope &amp; Satellite <a href="../../.././../../tags/Deploy" class="tag-link internal alias" data-slug="tags/Deploy">Deploy</a> pages with the same layout, for the V2 “release”.</li>
+<li>Adding more info/dialogue for research items and maybe a research animation when the user does something</li>
+<li>More ways to earn Stardust - CRITICAL
+<ul>
+<li>Maybe converting/selling minerals into stardust?</li>
+</ul>
+</li>
+<li>Improving the animations for things like extractions?</li>
+</ul>
+<h1 id="daily-reports">Daily reports<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#daily-reports" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="thursday-23-october">Thursday 23 October<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#thursday-23-october" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Well, we seem to have completely bricked up the 3d scenes in Expo (to put it politely). If I can’t get the basic scene that I got to yesterday fixed, I think I’ll just restart from scratch and make sure it’s running on iOS/Android builds first - just trying it in the web interface won’t suffice going forward. Builds for things like Bumble appear to work fine…but for 3d scenes, there appears to be a support discrepancy between web and native builds.</p>
+<p>After building in the new UI for the resource extraction, I need to make some changes to the deploy layouts for the Telescope &amp; Satellite. See <a href="#%5E972fa2" class="internal alias">^972fa2</a>.</p>
+<p>Voting/Consensus &amp; comments are something that I’ve highlighted as one of the priorities of this sprint, as well as this integration period. This could become one of the primary tutorial missions, I think (another point on <a href="#%5E972fa2" class="internal alias">^972fa2</a> - a key goal for next week would be organising the layout and maybe allowing for custom orders of panels &amp; viewports. What is the best order of things?).</p>
+<p>Milestones &amp; “getting started” missions will probably go into a new panel. So I will need to start a sample panel and one of the missions will be voting.</p>
+<p>Highlighting the utility of voting/commenting in the Imbox section, simply, will be a key requirement for this feature to succeed.</p>
+<p>I will have to investigate if the table definitions will need to change. In V3 <a href="#%5E4008fc" class="internal alias">^4008fc</a> we will need to have multiple comments tables and types for basic dialogue and sub-classifications.</p>
+<p>Writing and content gen can wait, building off Obsidian should probably suffice.</p>
+<h2 id="friday-24-october">Friday 24 October<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#friday-24-october" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Well, I was stuck at the Open Source / EU conference in Copenhagen for the entire afternoon so didn’t end up getting anywhere outside of some basic planning proposals (see above section). However, I have begun the process of attempting to get a 3d build working in expo by creating a (temporary, of course) new expo project where we just get a 3d model working:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">└─#</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> Create</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> new</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> Expo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> project</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> with</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> TypeScript</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">npx</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> create-expo-app@latest</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> expo-3d-test</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> --template</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> blank-typescript</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Navigate to project</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">cd</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> expo-3d-test</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Install core dependencies</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">npx</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> expo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> expo-gl</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> expo-three</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> three@0.160.0</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> @types/three</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Install navigation and UI packages</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> @react-navigation/native</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> @react-navigation/stack</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">npx</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> expo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> react-native-screens</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> react-native-safe-area-context</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Install state management and utilities</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> zustand</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> @react-native-async-storage/async-storage</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Install animation library</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> react-native-reanimated</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">npx</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> expo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> react-native-gesture-handler</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Install additional UI components</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> react-native-svg</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">npx</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> expo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> expo-linear-gradient</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">Creating</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> an</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> Expo</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> project</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> using</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> the</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> blank-typescript</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> template.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">✔</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> Downloaded</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> and</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> extracted</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> project</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> files.</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> npm install</span></span></code></pre></figure>
+<p>If we can get a basic shape working, I’ll try and get a single <code>.glb</code> model rendering in iOS, and then if we can get multiple, that’s the way to do it.</p>
+<p>But I was watching <a href="https://www.youtube.com/watch?v=ruHZ8X-R1Fg&amp;t=335s&amp;pp=ygUIYmVuIGF3YWQ%3D" class="external">this video<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> by Ben Awad and it got me thinking about how building this sort of game in React Native. It makes more sense, if I want to have the 3D scene for the rover, to use Godot or Unity - and I’m fairly sure I could brute force my way to a semi-decent UI with the help of Copilot in one of these engines. The issue, though, is that I’m not sure what sort of game this will be. The actual visuals don’t really matter, though - whether it’s a full-on simulation of the Martian surface or not, the game loop is what will cause people to play this game. Really, that’s the case for any game.</p>
+<p>I think having the 3D model of the rover, though, is fine regardless of the layout (makes for a cool icon, at least). Surely iOS natively can handle that.</p>
+<p>When it comes to the main <a href="../../.././../../tags/client" class="tag-link internal alias" data-slug="tags/client">client</a>, there are three main tasks for the extraction scene:</p>
+<ol>
+<li>Get the animations &amp; mineral extraction visuals/components integrated</li>
+<li>Update the tables (<code>mineralDeposits</code> and the new table)</li>
+<li>Extraction drains <code>deposits</code> and saves <code>minerals</code> to the user’s inventory</li>
+</ol>
+<p><img src="../../../Pasted-image-20251024103733.png" width="350" height="auto" alt="|"/></p>
+<ol>
+<li>Make the extraction scene full-height</li>
+<li>Add the new nav/top bar to the scene, replacing the “back” area</li>
+</ol>
+<p>Well, I’ve just discovered this:
+<img src="../../../Pasted-image-20251024103100.png" width="400" height="auto" alt="|"/>
+New <a href="../../.././../../tags/Bug" class="tag-link internal alias" data-slug="tags/Bug">Bug</a>  - <a href="../../.././../../tags/Satellite" class="tag-link internal alias" data-slug="tags/Satellite">Satellite</a> <a href="../../.././../../tags/Deploy" class="tag-link internal alias" data-slug="tags/Deploy">Deploy</a> scene is currently overflowing from the <a href="../../.././../../tags/Viewport" class="tag-link internal alias" data-slug="tags/Viewport">Viewport</a></p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input type="checkbox" checked disabled/> Satellite deploy viewport experiences overflows - <a href="../../.././../../tags/VIEWPORT-3" class="tag-link internal alias" data-slug="tags/VIEWPORT-3">VIEWPORT-3</a> ✅ 2025-10-24</li>
+</ul>
+<p>Another thing I’ve thought about is that I want to add significant offline-caching for users using <a href="../../.././../../tags/Star-Sailors" class="tag-link internal alias" data-slug="tags/Star-Sailors">Star-Sailors</a> via the PWA.</p>
+<ol>
+<li>Add <a href="../../.././../../tags/Recommendations" class="tag-link internal alias" data-slug="tags/Recommendations">Recommendations</a> <a href="../../.././../../tags/Next" class="tag-link internal alias" data-slug="tags/Next">Next</a> steps section to <a href="../../.././../../tags/Imbox" class="tag-link internal alias" data-slug="tags/Imbox">Imbox</a> <a href="../../.././../../tags/Panel" class="tag-link internal alias" data-slug="tags/Panel">Panel</a> / <a href="../../.././../../tags/Viewport" class="tag-link internal alias" data-slug="tags/Viewport">Viewport</a></li>
+</ol>
+<p>For Bumble, I just saw this - <a href="https://farcaster.xyz/limone.eth/0xfa9ec69a" class="external">https://farcaster.xyz/limone.eth/0xfa9ec69a<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<h2 id="saturday-25-october">Saturday 25 October<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#saturday-25-october" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Well, I had quite a nice tour of the Copenhagen Suborbital facility and it’s given me some ideas. But, that has obviously cut into the time remaining for the sprint.
+<img src="../../../B157C582-BCC2-41C5-97ED-E09E4340A042_4_5005_c.jpeg" width="300" height="auto" alt="|"/></p>
+<p>I still need to get some NGTS images and finish off the craft doc for Rhys.</p>
+<p>I’m also going to try to improve the Docker environment so it doesn’t force a complete container rebuild every time I start my laptop.</p>
+<p>Another issue:
+<code>/research</code> route not showing all researched items:
+<img src="../../../Pasted-image-20251025194328.png" width="300" height="auto" alt="|"/></p>
+<h1 id="media--notes">Media &amp; Notes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#media--notes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p><img src="../../../IMG_0397.jpeg" width="auto" height="auto" alt/>
+<img src="../../../IMG_0398.jpeg" width="auto" height="auto" alt/>
+<img src="../../../IMG_0401-1.jpeg" width="auto" height="auto" alt/>
+<img src="../../../IMG_0402-1.jpeg" width="auto" height="auto" alt/></p>
+<p><img src="../../../IMG_0477.jpeg" width="auto" height="auto" alt/>
+<img src="../../../IMG_0476.jpeg" width="auto" height="auto" alt/>
+I want to investigate the ESI minigame idea later.
+<img src="../../../IMG_0472.jpeg" width="auto" height="auto" alt/>
+<img src="../../../IMG_0473.jpeg" width="auto" height="auto" alt/>
+<img src="../../../IMG_0471.jpeg" width="auto" height="auto" alt/>
+<img src="../../../IMG_0470.jpeg" width="auto" height="auto" alt/>
+<img src="../../../IMG_0469.jpeg" width="auto" height="auto" alt/>
+<img src="../../../IMG_0468.jpeg" width="auto" height="auto" alt/></p>
+<h1 id="4008fc">Post-V2 ideas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4008fc" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p></p>
+<p>Actual use of spectroscopy data will be kept for the v3 releases, I think.
+#v3</p>
+<p>It’s imperative I have a think about the games/godot scenes I’m going to build over the next 1-2 months after v2 starts wrapping up so I stay engaged while still building the ecosystem.</p>
+<p>The new fish project from Zooniverse - once “evolution” of the bacterium >  coral > fish… hits a point…</p>
+<p>Will AWA come back before the end of V2?</p>
+<p>In V3, we could try doing what Posthog have done with their website - i.e. turn the whole thing into an OS-styled frontend.
+#post-sprint</p>
+<p>Rovers can go across multiple planets…</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="toc-content overflow" id="list-1"><li class="depth-0"><a href="#adding-consensus" data-for="adding-consensus">Adding consensus</a></li><li class="depth-2"><a href="#consensusimbox-viewport" data-for="consensusimbox-viewport">Consensus/imbox viewport</a></li><li class="depth-0"><a href="#resource-extractionmining" data-for="resource-extractionmining">Resource extraction/mining</a></li><li class="depth-0"><a href="#planets" data-for="planets">Planets</a></li><li class="depth-0"><a href="#bumble" data-for="bumble">Bumble</a></li><li class="depth-0"><a href="#ui-improvementschanges" data-for="ui-improvementschanges">UI Improvements/changes</a></li><li class="depth-0"><a href="#deployment-changes" data-for="deployment-changes">Deployment changes</a></li><li class="depth-1"><a href="#satellite" data-for="satellite">Satellite</a></li><li class="depth-0"><a href="#rover" data-for="rover">Rover</a></li><li class="depth-0"><a href="#bugs" data-for="bugs">Bugs</a></li><li class="depth-1"><a href="#research" data-for="research">Research</a></li><li class="depth-1"><a href="#post-sprint-ideas" data-for="post-sprint-ideas">Post-sprint ideas</a></li><li class="depth-0"><a href="#daily-reports" data-for="daily-reports">Daily reports</a></li><li class="depth-1"><a href="#thursday-23-october" data-for="thursday-23-october">Thursday 23 October</a></li><li class="depth-1"><a href="#friday-24-october" data-for="friday-24-october">Friday 24 October</a></li><li class="depth-1"><a href="#saturday-25-october" data-for="saturday-25-october">Saturday 25 October</a></li><li class="depth-0"><a href="#media--notes" data-for="media--notes">Media &amp; Notes</a></li><li class="depth-0"><a href="#post-v2-ideas" data-for="post-v2-ideas">Post-V2 ideas</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../../../_Sprints/Archive/2025/SSG-288" class="internal">SSG-288</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.1</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../../../postscript.js" type="module"></script></html>

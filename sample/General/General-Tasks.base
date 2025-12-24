@@ -1,0 +1,15 @@
+source: _Tasks/General/Stories
+filter:
+  segment: "General Tasks"
+views:
+  - type: cards
+    name: Stories
+    sort:
+      - property: priority
+        direction: DESC
+      - property: status
+        direction: ASC
+    image: note.banner
+    imageAspectRatio: 0.6
+  - type: table
+    name: All Tasks

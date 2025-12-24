@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Core Gameplay",
+    "isNext": true,
+    "stories": [
+      {
+        "name": "Allow users to manage their bee colonies",
+        "tasks": []
+      },
+      {
+        "name": "Allow users to cultivate and harvest crops",
+        "tasks": []
+      },
+      {
+        "name": "Allow users to produce and collect honey",
+        "tasks": []
+      }
+    ]
+  },
+  {
+    "name": "Advanced Features",
+    "isNext": false,
+    "stories": [
+      {
+        "name": "Allow users to progress and unlock new features",
+        "tasks": []
+      },
+      {
+        "name": "Allow users to experience seasonal changes",
+        "tasks": []
+      }
+    ]
+  }
+]

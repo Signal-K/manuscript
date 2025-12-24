@@ -1,0 +1,16 @@
+source: _Tasks/Bumble/Stories
+filter:
+  project: Bumble
+  type: story
+views:
+  - type: cards
+    name: Godot Infra Stories
+    filters:
+      and:
+        - Project.contains("Bumble")
+    sort:
+      - property: priority
+        direction: DESC
+      - property: status
+        direction: ASC
+    image: note.banner

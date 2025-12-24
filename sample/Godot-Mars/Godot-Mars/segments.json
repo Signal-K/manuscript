@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Basic Infrastructure",
+    "isNext": true,
+    "stories": [
+      {
+        "name": "Allow users to explore diverse Martian terrain",
+        "tasks": []
+      },
+      {
+        "name": "Allow users to experience dynamic weather",
+        "tasks": []
+      },
+      {
+        "name": "Allow users to build Mars colonies",
+        "tasks": []
+      }
+    ]
+  },
+  {
+    "name": "Advanced Systems",
+    "isNext": false,
+    "stories": [
+      {
+        "name": "Allow users to complete structured missions",
+        "tasks": []
+      },
+      {
+        "name": "Allow users to manage colony resources",
+        "tasks": []
+      }
+    ]
+  }
+]

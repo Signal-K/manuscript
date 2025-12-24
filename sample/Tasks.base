@@ -1,0 +1,5 @@
+source: _Tasks/Projects
+include: Tasks.md
+views:
+  - type: table
+    name: All Tasks

@@ -1,0 +1,30 @@
+source: _Tasks
+filter:
+  and:
+    - file.extension = "base"
+    - file.name != "Segments"
+    - file.name != "Tasks"
+views:
+  - type: table
+    name: Active Segments
+    filters:
+      and:
+        - type == "segment-base"
+    order:
+      - file.name
+      - file.path
+    sort:
+      - property: file.name
+        direction: ASC
+    columns:
+      - field: file.name
+        width: 250
+      - field: file.path
+        width: 400
+  - type: cards
+    name: Card
+    filters:
+      and:
+        - type == "story"
+    image: note.banner
+    imageAspectRatio: 0.75
